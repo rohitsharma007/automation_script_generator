@@ -1,0 +1,54 @@
+{
+  "LoginPage": {
+    "className": "LoginPagePage",
+    "elements": {
+      "usernameField": {
+        "selector": "#user-name",
+        "type": "element"
+      },
+      "passwordField": {
+        "selector": "#password",
+        "type": "password"
+      },
+      "loginButton": {
+        "selector": "#login-button",
+        "type": "button"
+      },
+      "errorMessage": {
+        "selector": "[data-test=\"error\"]",
+        "type": "element"
+      },
+      "logo": {
+        "selector": ".login_logo",
+        "type": "element"
+      }
+    },
+    "methods": {
+      "verifyUsernameField": {
+        "action": "verify",
+        "selector": "#user-name",
+        "description": "Verify usernameField is visible"
+      },
+      "fillPasswordField": {
+        "action": "fill",
+        "selector": "#password",
+        "description": "Fill passwordField field"
+      },
+      "clickLoginButton": {
+        "action": "click",
+        "selector": "#login-button",
+        "description": "Click loginButton"
+      },
+      "verifyErrorMessage": {
+        "action": "verify",
+        "selector": "[data-test=\"error\"]",
+        "description": "Verify errorMessage is visible"
+      },
+      "verifyLogo": {
+        "action": "verify",
+        "selector": ".login_logo",
+        "description": "Verify logo is visible"
+      }
+    }
+  }
+}

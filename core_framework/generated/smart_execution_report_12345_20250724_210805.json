@@ -1,0 +1,24 @@
+{
+  "test_case_id": "12345",
+  "status": "running",
+  "execution_log": [
+    "Step 1: Step 1: Navigate to URL",
+    "Step 2: Step 2: fill the email",
+    "Step 3: Step 3: fill the password",
+    "Step 4: Step 4: click on Sign in",
+    "Step 4 failed: Page.title: Execution context was destroyed, most likely because of a navigation",
+    "Step 5: Step 5: Verify dashboard loads successfully"
+  ],
+  "screenshots": [
+    "step_1_screenshot.png",
+    "step_2_screenshot.png",
+    "step_3_screenshot.png",
+    "step_4_screenshot.png",
+    "step_5_screenshot.png"
+  ],
+  "generated_files": {
+    "script": "smart_generated_test_12345_20250724_210805.py",
+    "page_objects": "smart_page_objects_12345_20250724_210805.json",
+    "report": "smart_execution_report_12345_20250724_210805.json"
+  }
+}

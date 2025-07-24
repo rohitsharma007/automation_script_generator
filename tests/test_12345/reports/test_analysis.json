@@ -1,0 +1,65 @@
+{
+  "testCaseId": "12345",
+  "testFolder": "test_12345",
+  "timestamp": "2025-07-24T19:05:00.794Z",
+  "summary": {
+    "totalBrowsers": 1,
+    "passed": 1,
+    "failed": 0
+  },
+  "results": [
+    {
+      "browserType": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Navigate to URL",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:04:55.001Z",
+          "endTime": "2025-07-24T19:04:58.508Z",
+          "duration": 3507
+        },
+        {
+          "step": 2,
+          "action": "fill the email",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:04:58.508Z",
+          "endTime": "2025-07-24T19:04:59.051Z",
+          "duration": 543
+        },
+        {
+          "step": 3,
+          "action": "fill the password",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:04:59.051Z",
+          "endTime": "2025-07-24T19:04:59.587Z",
+          "duration": 536
+        },
+        {
+          "step": 4,
+          "action": "click on Sign in",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:04:59.588Z",
+          "endTime": "2025-07-24T19:05:00.669Z",
+          "duration": 1081
+        },
+        {
+          "step": 5,
+          "action": "Verify dashboard loads successfully",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:05:00.669Z",
+          "endTime": "2025-07-24T19:05:00.690Z",
+          "duration": 21
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "[2025-07-24T19:04:58.508Z] ✅ Step 1: Navigate to URL - PASSED",
+    "[2025-07-24T19:04:59.051Z] ✅ Step 2: fill the email - PASSED",
+    "[2025-07-24T19:04:59.587Z] ✅ Step 3: fill the password - PASSED",
+    "[2025-07-24T19:05:00.669Z] ✅ Step 4: click on Sign in - PASSED",
+    "[2025-07-24T19:05:00.690Z] ✅ Step 5: Verify dashboard loads successfully - PASSED"
+  ]
+}

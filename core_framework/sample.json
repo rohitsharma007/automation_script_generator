@@ -1,0 +1,37 @@
+{
+  "test_case_id": "OrangeHRM",
+  "test_steps": [
+    {
+      "step": 1,
+      "action": "Navigate to URL",
+      "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    },
+    {
+      "step": 2,
+      "action": "Fill username field",
+      "elementType": "username",
+      "value": "Admin"
+    },
+    {
+      "step": 3,
+      "action": "Fill password field",
+      "elementType": "password",
+      "value": "admin123"
+    },
+    {
+      "step": 4,
+      "action": "Click login button",
+      "elementType": "loginButton"
+    },
+    {
+      "step": 5,
+      "action": "Verify successful login",
+      "elementType": "successIndicator"
+    }
+  ],
+  "test_data": {
+    "username": "Admin",
+    "password": "admin123",
+    "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+  }
+}

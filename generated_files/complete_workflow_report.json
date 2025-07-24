@@ -1,0 +1,130 @@
+{
+  "testCase": {
+    "test_case_id": "Complete_Workflow",
+    "description": "Navigate to SauceDemo login page. Fill username and password. Click login. Verify dashboard loads. Check product inventory via API.",
+    "test_steps": [
+      {
+        "step": 1,
+        "action": "Navigate to URL",
+        "url": "https://www.saucedemo.com/",
+        "description": "navigate to saucedemo login page"
+      },
+      {
+        "step": 2,
+        "action": "Fill username field",
+        "elementType": "username",
+        "value": "testuser3396",
+        "description": "fill username and password"
+      },
+      {
+        "step": 3,
+        "action": "Click button",
+        "elementType": "loginButton",
+        "description": "click login"
+      },
+      {
+        "step": 4,
+        "action": "Verify successful action",
+        "elementType": "successIndicator",
+        "description": "verify dashboard loads"
+      },
+      {
+        "step": 5,
+        "action": "Verify successful action",
+        "elementType": "successIndicator",
+        "description": "check product inventory via api"
+      }
+    ],
+    "test_data": {
+      "username": "testuser3396",
+      "password": "demo123",
+      "email": "user+1753385093396@demo.com"
+    },
+    "generated_at": "2025-07-24T19:24:53.396Z"
+  },
+  "uiExecution": {
+    "status": "COMPLETED",
+    "elementsDetected": [
+      "username",
+      "password",
+      "loginButton"
+    ],
+    "timestamp": "2025-07-24T19:24:53.414Z"
+  },
+  "apiValidation": {
+    "step": 1,
+    "action": "API Request",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/posts/1",
+    "status": "PASSED",
+    "startTime": "2025-07-24T19:24:53.397Z",
+    "duration": 17,
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "date": "Thu, 24 Jul 2025 19:24:53 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "access-control-allow-credentials": "true",
+        "cache-control": "max-age=43200",
+        "etag": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"",
+        "expires": "-1",
+        "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+        "pragma": "no-cache",
+        "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=dwqsqHnn4wfkNA6cYmEoaIuzfXXPjjV3N9fyV%2FabpIU%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1751773406\"}],\"max_age\":3600}",
+        "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=dwqsqHnn4wfkNA6cYmEoaIuzfXXPjjV3N9fyV%2FabpIU%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1751773406\"",
+        "server": "cloudflare",
+        "vary": "Origin, Accept-Encoding",
+        "via": "2.0 heroku-router",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express",
+        "x-ratelimit-limit": "1000",
+        "x-ratelimit-remaining": "999",
+        "x-ratelimit-reset": "1751773417",
+        "age": "27614",
+        "cf-cache-status": "HIT",
+        "cf-ray": "9645cce1cb047eaa-MAA",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "data": {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      },
+      "size": 275
+    },
+    "error": null,
+    "validations": [
+      {
+        "type": "status_code",
+        "expected": 200,
+        "actual": 200,
+        "passed": true,
+        "message": "Expected status 200, got 200"
+      },
+      {
+        "type": "not_empty",
+        "actual": true,
+        "passed": true,
+        "message": "Custom validation"
+      },
+      {
+        "type": "json_path",
+        "expected": 1,
+        "actual": 1,
+        "passed": true,
+        "message": "Custom validation"
+      }
+    ],
+    "endTime": "2025-07-24T19:24:53.414Z"
+  },
+  "summary": {
+    "naturalLanguageProcessed": true,
+    "smartElementDetection": true,
+    "apiIntegration": true,
+    "overallSuccess": true
+  }
+}

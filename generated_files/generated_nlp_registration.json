@@ -1,0 +1,52 @@
+{
+  "test_case_id": "NLP_Registration",
+  "description": "Go to the registration page. Enter first name as 'John'. Type email 'john@test.com'. Fill password field. Click submit button. Check confirmation message.",
+  "test_steps": [
+    {
+      "step": 1,
+      "action": "Navigate to URL",
+      "url": "https://www.saucedemo.com/",
+      "description": "go to the registration page"
+    },
+    {
+      "step": 2,
+      "action": "Fill text field",
+      "elementType": "text",
+      "value": "john",
+      "description": "enter first name as 'john'"
+    },
+    {
+      "step": 3,
+      "action": "Fill username field",
+      "elementType": "username",
+      "value": "john.doe+1753385092131@test.com",
+      "description": "type email 'john@test"
+    },
+    {
+      "step": 4,
+      "action": "Fill password field",
+      "elementType": "password",
+      "value": "password123",
+      "description": "fill password field"
+    },
+    {
+      "step": 5,
+      "action": "Click button",
+      "elementType": "loginButton",
+      "description": "click submit button"
+    },
+    {
+      "step": 6,
+      "action": "Verify successful action",
+      "elementType": "successIndicator",
+      "description": "check confirmation message"
+    }
+  ],
+  "test_data": {
+    "firstName": "Test",
+    "lastName": "Smith",
+    "email": "john.doe+1753385092131@test.com",
+    "phone": "9876543210"
+  },
+  "generated_at": "2025-07-24T19:24:52.131Z"
+}

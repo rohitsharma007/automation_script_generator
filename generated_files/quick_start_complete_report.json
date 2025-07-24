@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-07-24T19:44:32.319Z",
+  "testCase": {
+    "test_case_id": "QuickStart_Complete_Workflow",
+    "description": "Navigate to demo site. Login with credentials. Verify dashboard. Check user profile via API.",
+    "test_steps": [
+      {
+        "step": 1,
+        "action": "Navigate to URL",
+        "url": "https://example.com",
+        "description": "navigate to demo site"
+      },
+      {
+        "step": 2,
+        "action": "Verify successful action",
+        "elementType": "successIndicator",
+        "description": "verify dashboard"
+      },
+      {
+        "step": 3,
+        "action": "Verify successful action",
+        "elementType": "successIndicator",
+        "description": "check user profile via api"
+      }
+    ],
+    "test_data": {
+      "username": "user1232300",
+      "password": "test123",
+      "email": "user+1753386272300@demo.com"
+    },
+    "generated_at": "2025-07-24T19:44:32.300Z"
+  },
+  "execution": {
+    "uiSteps": 3
+  },
+  "features": {
+    "nlpProcessing": true,
+    "pageObjectGeneration": true,
+    "apiIntegration": true,
+    "smartDetection": true
+  }
+}

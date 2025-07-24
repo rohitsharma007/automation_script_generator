@@ -1,0 +1,32 @@
+{
+  "site": "https://www.phptravels.net/login",
+  "timestamp": "2025-07-24T19:46:51.829Z",
+  "elements": {
+    "username": {
+      "selector": "#email",
+      "confidence": 70,
+      "detected": true,
+      "detectionTime": 43
+    },
+    "password": {
+      "selector": "#password",
+      "confidence": 100,
+      "detected": true,
+      "detectionTime": 2
+    },
+    "loginButton": {
+      "selector": "#login",
+      "confidence": 40,
+      "detected": true,
+      "detectionTime": 4
+    }
+  },
+  "performance": {
+    "pageLoadTime": 1027
+  },
+  "summary": {
+    "totalElements": 3,
+    "detectedElements": 3,
+    "successRate": 100
+  }
+}

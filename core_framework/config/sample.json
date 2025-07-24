@@ -1,0 +1,17 @@
+{
+  "test_case_id": "Herokuapp",
+  "test_steps": [
+    "Step 1: Navigate to URL",
+    "Step 2: fill the email",
+    "Step 3: fill the password",
+    "Step 4: click on Sign in",
+    "Step 5: Verify dashboard loads successfully"
+  ],
+  "test_data": {
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!",
+    "url": "https://the-internet.herokuapp.com/login"
+  },
+  "headless": false,
+  "language": "python"
+}

@@ -1,0 +1,75 @@
+{
+  "OrangeHRM": {
+    "page_name": "OrangeHRM",
+    "url_pattern": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "elements": {
+      "password": {
+        "selector": "[name=\"password\"]",
+        "type": "password",
+        "confidence": 0.95,
+        "text": "",
+        "position": [
+          300,
+          459,
+          422,
+          45
+        ]
+      },
+      "submit_Login": {
+        "selector": "button[type=\"submit\"]",
+        "type": "submit",
+        "confidence": 0.85,
+        "text": "Login",
+        "position": [
+          300,
+          536,
+          422,
+          46
+        ]
+      },
+      "app": {
+        "selector": "#app",
+        "type": "email",
+        "confidence": 0.36000000000000004,
+        "text": "LoginUsername : AdminPassword : admin123UsernamePassword Login Forgot your password? OrangeHRM OS 5.7\u00a9 2005 - 2025 OrangeHRM, Inc. All rights reserved.",
+        "position": [
+          0,
+          0,
+          1280,
+          720
+        ]
+      },
+      "username": {
+        "selector": "[name=\"username\"]",
+        "type": "email",
+        "confidence": 0.9,
+        "text": "",
+        "position": [
+          300,
+          373,
+          422,
+          45
+        ]
+      },
+      "password_3": {
+        "selector": "[name=\"password\"]",
+        "type": "password",
+        "confidence": 0.95,
+        "text": "",
+        "position": [
+          300,
+          459,
+          422,
+          45
+        ]
+      }
+    },
+    "actions": [
+      "fill_password(password: str)",
+      "click_submit_Login()",
+      "fill_app(username: str)",
+      "fill_username(username: str)",
+      "fill_password_3(password: str)"
+    ]
+  }
+}

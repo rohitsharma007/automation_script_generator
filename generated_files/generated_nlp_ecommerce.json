@@ -1,0 +1,36 @@
+{
+  "test_case_id": "NLP_Ecommerce",
+  "description": "Visit the product page. Select item quantity as 2. Add to cart. Navigate to checkout. Verify cart contents.",
+  "test_steps": [
+    {
+      "step": 1,
+      "action": "Navigate to URL",
+      "url": "https://www.saucedemo.com/",
+      "description": "visit the product page"
+    },
+    {
+      "step": 2,
+      "action": "Click element",
+      "elementType": "element",
+      "description": "select item quantity as 2"
+    },
+    {
+      "step": 3,
+      "action": "Navigate to URL",
+      "url": "https://www.saucedemo.com/",
+      "description": "navigate to checkout"
+    },
+    {
+      "step": 4,
+      "action": "Verify successful action",
+      "elementType": "successIndicator",
+      "description": "verify cart contents"
+    }
+  ],
+  "test_data": {
+    "productName": "Demo Item",
+    "quantity": 5,
+    "price": 10.99
+  },
+  "generated_at": "2025-07-24T19:24:52.132Z"
+}

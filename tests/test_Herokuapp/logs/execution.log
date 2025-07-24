@@ -1,0 +1,24 @@
+Test Case ID: Herokuapp
+Execution Time: 2025-07-24T19:05:27.454Z
+Test Folder: test_Herokuapp
+
+=== EXECUTION LOGS ===
+[2025-07-24T19:05:25.230Z] ✅ Step 1: Navigate to URL - PASSED
+[2025-07-24T19:05:25.763Z] ✅ Step 2: fill the email - PASSED
+[2025-07-24T19:05:26.287Z] ✅ Step 3: fill the password - PASSED
+[2025-07-24T19:05:27.342Z] ✅ Step 4: click on Sign in - PASSED
+[2025-07-24T19:05:27.362Z] ✅ Step 5: Verify dashboard loads successfully - PASSED
+
+=== SUMMARY ===
+Total Browsers Tested: 1
+Passed: 1
+Failed: 0
+
+=== DETAILED RESULTS ===
+Browser: chromium - Status: PASSED
+Steps:
+  Step 1: Navigate to URL - PASSED
+  Step 2: fill the email - PASSED
+  Step 3: fill the password - PASSED
+  Step 4: click on Sign in - PASSED
+  Step 5: Verify dashboard loads successfully - PASSED

@@ -1,0 +1,44 @@
+{
+  "test_case_id": "NLP_SauceDemo",
+  "description": "Navigate to https://www.saucedemo.com/. Fill username with 'standard_user'. Fill password with 'secret_sauce'. Click login button. Verify successful login.",
+  "test_steps": [
+    {
+      "step": 1,
+      "action": "Navigate to URL",
+      "url": "https://www",
+      "description": "navigate to https://www"
+    },
+    {
+      "step": 2,
+      "action": "Fill username field",
+      "elementType": "username",
+      "value": "standard_user",
+      "description": "fill username with 'standard_user'"
+    },
+    {
+      "step": 3,
+      "action": "Fill password field",
+      "elementType": "password",
+      "value": "secret_sauce",
+      "description": "fill password with 'secret_sauce'"
+    },
+    {
+      "step": 4,
+      "action": "Click button",
+      "elementType": "loginButton",
+      "description": "click login button"
+    },
+    {
+      "step": 5,
+      "action": "Verify successful action",
+      "elementType": "successIndicator",
+      "description": "verify successful login"
+    }
+  ],
+  "test_data": {
+    "username": "testuser2128",
+    "password": "demo123",
+    "email": "admin+1753385092128@test.com"
+  },
+  "generated_at": "2025-07-24T19:24:52.128Z"
+}

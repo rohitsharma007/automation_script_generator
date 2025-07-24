@@ -1,0 +1,16 @@
+{
+  "name": "playwright-automation-12345",
+  "version": "1.0.0",
+  "description": "Generated Playwright automation scripts for test case 12345",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "codegen": "node playwright_codegen_12345_20250724_210805.js",
+    "mcp": "node playwright_mcp_12345_20250724_210805.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0"
+  }
+}

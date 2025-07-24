@@ -1,0 +1,65 @@
+{
+  "testCaseId": "OrangeHRM",
+  "testFolder": "test_OrangeHRM",
+  "timestamp": "2025-07-24T19:20:48.279Z",
+  "summary": {
+    "totalBrowsers": 1,
+    "passed": 1,
+    "failed": 0
+  },
+  "results": [
+    {
+      "browserType": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Navigate to URL",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:20:39.097Z",
+          "endTime": "2025-07-24T19:20:43.433Z",
+          "duration": 4336
+        },
+        {
+          "step": 2,
+          "action": "Fill username field",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:20:43.433Z",
+          "endTime": "2025-07-24T19:20:43.962Z",
+          "duration": 529
+        },
+        {
+          "step": 3,
+          "action": "Fill password field",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:20:43.962Z",
+          "endTime": "2025-07-24T19:20:44.485Z",
+          "duration": 523
+        },
+        {
+          "step": 4,
+          "action": "Click login button",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:20:44.485Z",
+          "endTime": "2025-07-24T19:20:45.026Z",
+          "duration": 541
+        },
+        {
+          "step": 5,
+          "action": "Verify successful login",
+          "status": "PASSED",
+          "startTime": "2025-07-24T19:20:45.026Z",
+          "endTime": "2025-07-24T19:20:48.198Z",
+          "duration": 3172
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "[2025-07-24T19:20:43.433Z] ✅ Step 1: Navigate to URL - PASSED",
+    "[2025-07-24T19:20:43.962Z] ✅ Step 2: Fill username field - PASSED",
+    "[2025-07-24T19:20:44.485Z] ✅ Step 3: Fill password field - PASSED",
+    "[2025-07-24T19:20:45.026Z] ✅ Step 4: Click login button - PASSED",
+    "[2025-07-24T19:20:48.198Z] ✅ Step 5: Verify successful login - PASSED"
+  ]
+}

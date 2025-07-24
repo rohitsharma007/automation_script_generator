@@ -1,0 +1,21 @@
+{
+  "site": "https://the-internet.herokuapp.com/login",
+  "timestamp": "2025-07-24T19:44:32.257Z",
+  "elements": {
+    "username": {
+      "selector": "#username",
+      "confidence": 60,
+      "detected": true
+    },
+    "password": {
+      "selector": "#password",
+      "confidence": 80,
+      "detected": true
+    },
+    "loginButton": {
+      "selector": "#login",
+      "confidence": 40,
+      "detected": true
+    }
+  }
+}

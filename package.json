@@ -1,0 +1,17 @@
+{
+  "name": "nlp",
+  "version": "1.0.0",
+  "description": "🎭 **AI-Powered Multi-Context Playwright Script Generator**",
+  "main": "playwright.config_12345_20250724_210805.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.54.1",
+    "axios": "^1.11.0",
+    "playwright": "^1.54.1"
+  }
+}
