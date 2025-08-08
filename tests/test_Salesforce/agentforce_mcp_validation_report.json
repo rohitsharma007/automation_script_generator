@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-08-08T20:21:08.549Z",
+  "url": "https://www.salesforce.com",
+  "browsers": [
+    "chromium"
+  ],
+  "mongoDbStored": true,
+  "mongoId": null,
+  "overallScore": 0,
+  "status": "FAIL",
+  "browserResults": [
+    {
+      "browser": "chromium",
+      "timestamp": "2025-08-08T20:21:08.549Z",
+      "navigationSuccess": false,
+      "chatInterfaceFound": false,
+      "agentforceDetected": false,
+      "chatInteractions": [],
+      "performanceMetrics": {},
+      "score": 0,
+      "errors": [
+        "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.salesforce.com/\", waiting until \"networkidle\"\u001b[22m\n"
+      ],
+      "executionTime": 30196
+    }
+  ],
+  "chatInteractions": [],
+  "intelligentDetections": [
+    {
+      "browser": "chromium",
+      "timestamp": "2025-08-08T20:21:38.745Z",
+      "successfulDetections": [],
+      "learningData": {},
+      "confidenceScores": {}
+    }
+  ],
+  "performanceMetrics": {},
+  "mcpFeatures": {
+    "intelligentElementDetection": true,
+    "multiContextTesting": true,
+    "smartResponseAnalysis": true,
+    "learningCapabilities": true
+  },
+  "summary": {
+    "totalBrowsers": 1,
+    "successfulBrowsers": 0,
+    "totalChatInteractions": 0,
+    "successfulInteractions": 0,
+    "averageResponseTime": 0,
+    "intelligentDetections": 1
+  }
+}

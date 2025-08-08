@@ -7,6 +7,7 @@
     "test": "npx playwright test standalone_agentforce_validator.js --headed",
     "test:headless": "npx playwright test standalone_agentforce_validator.js",
     "validate": "node standalone_agentforce_validator.js",
+    "validate-mcp": "node agentforce_validator_mcp.js",
     "test-mongodb": "node test_mongodb.js",
     "install-browsers": "npx playwright install",
     "setup": "npm install && npx playwright install"

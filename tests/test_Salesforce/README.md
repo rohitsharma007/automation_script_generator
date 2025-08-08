@@ -2,6 +2,31 @@
 
 A standalone script to validate Salesforce Agentforce chat functionality with MongoDB database integration for storing validation results and chat interactions.
 
+## Features
+
+### Core Validation Features
+- **Automated Agentforce Testing**: Validates Salesforce's AI assistant functionality
+- **Cross-browser Support**: Tests with Playwright (Chromium, Firefox, WebKit)
+- **Intelligent Chat Detection**: Automatically finds and interacts with chat interfaces
+- **Keyword Analysis**: Analyzes AI responses for relevant keywords
+- **Comprehensive Reporting**: Generates detailed JSON reports
+
+### Enhanced MCP Intelligence (New!)
+- **Smart Element Detection**: Uses AI-powered element detection from core framework
+- **Multi-Context Testing**: Runs validation across multiple browser contexts simultaneously
+- **Learning Capabilities**: Learns from successful element detections for improved accuracy
+- **Semantic Analysis**: Advanced element detection using semantic patterns
+- **Visual Pattern Recognition**: Detects elements based on visual characteristics
+- **Confidence Scoring**: Provides confidence scores for element detections
+- **Performance Metrics**: Collects detailed performance data (load times, paint metrics)
+- **Enhanced Tracing**: Records videos, HAR files, and traces for debugging
+
+### Database Integration
+- **MongoDB Integration**: Stores validation results and chat interactions for analytics
+- **Historical Analytics**: Track validation trends over time
+- **Team Collaboration**: Share results across team members
+- **Graceful Fallback**: Works with or without MongoDB connection
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -82,18 +107,54 @@ ENABLE_MONGODB=true
 # ENABLE_MONGODB=true
 ```
 
-### MongoDB Commands
+### Available Commands
 
 ```bash
 # Test MongoDB connection
 npm run test-mongodb
 
-# Run validation with MongoDB storage
+# Run standard Agentforce validation
 npm run validate
 
-# Disable MongoDB (set ENABLE_MONGODB=false in .env)
-# Script will still work without MongoDB
+# Run enhanced Agentforce validation with MCP intelligence
+npm run validate-mcp
+
+# Setup (install dependencies and browsers)
+npm run setup
 ```
+
+## Validator Comparison
+
+| Feature | Standard Validator | MCP Enhanced Validator |
+|---------|-------------------|------------------------|
+| **Basic Validation** | ✅ | ✅ |
+| **MongoDB Integration** | ✅ | ✅ |
+| **Single Browser Testing** | ✅ | ✅ |
+| **Multi-Browser Testing** | ❌ | ✅ |
+| **Smart Element Detection** | ❌ | ✅ |
+| **Learning Capabilities** | ❌ | ✅ |
+| **Performance Metrics** | ❌ | ✅ |
+| **Video/Trace Recording** | ❌ | ✅ |
+| **Confidence Scoring** | ❌ | ✅ |
+| **Semantic Analysis** | ❌ | ✅ |
+| **Execution Speed** | Faster | Slower (more thorough) |
+| **Resource Usage** | Lower | Higher |
+| **Best For** | Quick validation, CI/CD | Comprehensive testing, debugging |
+
+### When to Use Each Validator
+
+**Use Standard Validator (`npm run validate`) when:**
+- Running quick validation checks
+- In CI/CD pipelines where speed is important
+- Limited system resources
+- Simple pass/fail validation needed
+
+**Use MCP Enhanced Validator (`npm run validate-mcp`) when:**
+- Comprehensive testing and analysis required
+- Debugging element detection issues
+- Cross-browser compatibility testing
+- Detailed performance analysis needed
+- Learning from validation patterns for improvement
 
 ### Database Schema
 
