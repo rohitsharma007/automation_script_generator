@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-08-08T20:04:23.949Z",
+  "url": "https://www.salesforce.com",
+  "chatFound": true,
+  "agentforceValidation": {
+    "agentforceFound": true,
+    "chatResponsive": true,
+    "validationScore": 100,
+    "details": [
+      "✅ Found keyword: \"agentforce\"",
+      "✅ Page has substantial content - chat likely responsive"
+    ]
+  },
+  "chatInteractionWorking": true,
+  "overallStatus": "PASS",
+  "mongoDbStored": false
+}
