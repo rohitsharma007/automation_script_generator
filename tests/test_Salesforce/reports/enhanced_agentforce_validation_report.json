@@ -1,0 +1,3848 @@
+{
+  "timestamp": "2025-08-08T21:35:05.893Z",
+  "url": "https://www.salesforce.com",
+  "overall_score": 56,
+  "tests": {
+    "agentforce_presence": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.918Z"
+    },
+    "chat_interface": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.918Z"
+    },
+    "agent_responsiveness": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.918Z"
+    },
+    "conversation_flow": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.918Z"
+    },
+    "error_handling": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.919Z"
+    },
+    "accessibility_compliance": {
+      "passed": false,
+      "score": 0,
+      "error": "this.logger.test is not a function",
+      "timestamp": "2025-08-08T21:35:28.919Z"
+    },
+    "ai_ai_basic_agentforce_chat_interface_validation_test": {
+      "passed": true,
+      "score": 100,
+      "details": {
+        "stepsExecuted": 3,
+        "stepsSuccessful": 3,
+        "executedSteps": [
+          {
+            "action": "navigate",
+            "description": "Navigate to page",
+            "success": true
+          },
+          {
+            "action": "custom",
+            "description": "Perform action",
+            "success": true
+          },
+          {
+            "action": "verify",
+            "description": "Verify result",
+            "success": true
+          }
+        ]
+      },
+      "aiGenerated": true,
+      "timestamp": "2025-08-08T21:35:31.650Z"
+    }
+  },
+  "ai_analysis": {
+    "generated_tests": {
+      "url": "https://www.salesforce.com/in/?ir=1&bc=HB",
+      "objective": "Agentforce chat interface validation",
+      "timestamp": "2025-08-08T21:35:28.939Z",
+      "pageAnalysis": {
+        "url": "https://www.salesforce.com/in/?ir=1&bc=HB",
+        "title": "Salesforce: The Customer Company | Salesforce India",
+        "timestamp": "2025-08-08T21:35:28.919Z",
+        "elements": {
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Try Salesforce Starter Suite for free.",
+              "id": "",
+              "classes": [
+                "headline",
+                "marquee__headline--standard"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Learn what Salesforce products can do for you.",
+              "id": "",
+              "classes": [
+                "headline"
+              ]
+            },
+            {
+              "level": "h3",
+              "text": "Small Business",
+              "id": "",
+              "classes": [
+                "card__headline",
+                "mb-16"
+              ]
+            },
+            {
+              "level": "h3",
+              "text": "Sales Cloud",
+              "id": "",
+              "classes": [
+                "card__headline",
+                "mb-16"
+              ]
+            },
+            {
+              "level": "h3",
+              "text": "Service Cloud",
+              "id": "",
+              "classes": [
+                "card__headline",
+                "mb-16"
+              ]
+            },
+            {
+              "level": "h3",
+              "text": "Marketing Cloud",
+              "id": "",
+              "classes": [
+                "card__headline",
+                "mb-16"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "We bring companies and customers together",
+              "id": "",
+              "classes": [
+                "headline",
+                "text__headline--large"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Learn valuable skills for free, with Trailhead.",
+              "id": "",
+              "classes": [
+                "headline"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Over 150,000 companies, both big and small, are growing their business with Salesforce.",
+              "id": "",
+              "classes": [
+                "headline",
+                "pbc-g-text-display-4"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Try Salesforce for free. No credit card required, no software to install.",
+              "id": "",
+              "classes": [
+                "pbc-g-text-display-4",
+                "mt-0",
+                "mb-24",
+                "mobile-mb-16"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "How can we help grow your business?",
+              "id": "",
+              "classes": [
+                "headline"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Our technology helps people create better jobs, lives, companies, and communities.",
+              "id": "",
+              "classes": [
+                "headline"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Questions? We’ll put you on the right path.",
+              "id": "",
+              "classes": [
+                "pbc-g-text-display-4",
+                "mt-0",
+                "mb-24",
+                "mobile-mb-16"
+              ]
+            },
+            {
+              "level": "h2",
+              "text": "Cookie Consent Manager",
+              "id": "ot-pc-title",
+              "classes": []
+            },
+            {
+              "level": "h3",
+              "text": "General Information",
+              "id": "ot-pvcy-txt",
+              "classes": []
+            },
+            {
+              "level": "h3",
+              "text": "Required Cookies",
+              "id": "ot-header-id-1",
+              "classes": []
+            },
+            {
+              "level": "h3",
+              "text": "Functional Cookies",
+              "id": "ot-header-id-3",
+              "classes": []
+            },
+            {
+              "level": "h3",
+              "text": "Advertising Cookies",
+              "id": "ot-header-id-4",
+              "classes": []
+            },
+            {
+              "level": "h4",
+              "text": "General Information",
+              "id": "ot-pvcy-hdr",
+              "classes": []
+            },
+            {
+              "level": "h4",
+              "text": "Required Cookies",
+              "id": "",
+              "classes": [
+                "ot-cat-header"
+              ]
+            },
+            {
+              "level": "h4",
+              "text": "Functional Cookies",
+              "id": "",
+              "classes": [
+                "ot-cat-header"
+              ]
+            },
+            {
+              "level": "h4",
+              "text": "Advertising Cookies",
+              "id": "",
+              "classes": [
+                "ot-cat-header"
+              ]
+            },
+            {
+              "level": "h3",
+              "text": "Cookie List",
+              "id": "",
+              "classes": []
+            }
+          ],
+          "sections": [
+            {
+              "tag": "main",
+              "id": "main-content",
+              "classes": [
+                "pbc-homepage-template"
+              ],
+              "childCount": 10
+            },
+            {
+              "tag": "section",
+              "id": "1727058029452_qla",
+              "classes": [
+                "relative",
+                "notification--blade",
+                "notification--blade--image-standard"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "1682325589592_4ma",
+              "classes": [
+                "relative",
+                "marquee--blade",
+                "marquee--right-image",
+                "theme--light",
+                "theme-light-blue-20"
+              ],
+              "childCount": 4
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "grid",
+                "grid_main",
+                "grid--sixteenbynine"
+              ],
+              "childCount": 2
+            },
+            {
+              "tag": "section",
+              "id": "1675754273447_1hb",
+              "classes": [
+                "relative",
+                "nup--blade",
+                "nup--link_below",
+                "layout--4",
+                "nup--card_resource"
+              ],
+              "childCount": 3
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__1",
+                "card__wrapper"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__2",
+                "card__wrapper"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__3",
+                "card__wrapper"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__4",
+                "card__wrapper"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "1675753708418_125",
+              "classes": [
+                "relative",
+                "text--blade",
+                "theme--light_gradient",
+                "theme-light-blue-20"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "grid",
+                "grid_main",
+                "text__blade--link_below",
+                "text--center"
+              ],
+              "childCount": 2
+            },
+            {
+              "tag": "section",
+              "id": "1693966637083_fub",
+              "classes": [
+                "relative",
+                "thmfe--blade",
+                "thmfe--link_below",
+                "layout--3",
+                "thmfe--"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__wrapper",
+                "theme--light"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "1675755059572_15io",
+              "classes": [
+                "relative",
+                "logogrid--blade",
+                "theme--light_gradient",
+                "theme-light-blue-20"
+              ],
+              "childCount": 3
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "grid",
+                "grid_main"
+              ],
+              "childCount": 3
+            },
+            {
+              "tag": "section",
+              "id": "1675817562118_6zf",
+              "classes": [
+                "relative",
+                "promotion--blade",
+                "promotion--right-image",
+                "theme--light_gradient",
+                "theme-light-blue-20"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "grid",
+                "grid_main",
+                "theme--light",
+                "promotion_layout--full_height"
+              ],
+              "childCount": 2
+            },
+            {
+              "tag": "section",
+              "id": "1675817758212_2ur",
+              "classes": [
+                "relative",
+                "story--blade",
+                "story--link_above",
+                "layout--4",
+                "story--card_story"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__1",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__2",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__3",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__4",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "1675818082885_kri",
+              "classes": [
+                "relative",
+                "story--blade",
+                "story--link_above",
+                "layout--3",
+                "story--card_story"
+              ],
+              "childCount": 3
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__1",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__2",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "card",
+                "card__3",
+                "card__wrapper",
+                "theme--light_gradient"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "1675818433240_m8n",
+              "classes": [
+                "relative",
+                "promotion--blade",
+                "promotion--center-image",
+                "theme--light_gradient",
+                "theme-light-blue-20"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "article",
+              "id": "",
+              "classes": [
+                "grid",
+                "grid_main",
+                "theme--light",
+                "promotion_layout--center"
+              ],
+              "childCount": 2
+            },
+            {
+              "tag": "section",
+              "id": "ot-pc-lst",
+              "classes": [
+                "ot-hide",
+                "ot-pc-scrollbar",
+                "ot-enbl-chr"
+              ],
+              "childCount": 3
+            },
+            {
+              "tag": "section",
+              "id": "ot-lst-cnt",
+              "classes": [
+                "ot-pc-scrollbar"
+              ],
+              "childCount": 1
+            },
+            {
+              "tag": "section",
+              "id": "ot-fltr-modal",
+              "classes": [],
+              "childCount": 1
+            }
+          ],
+          "navigation": [],
+          "content": [],
+          "interactive": [
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "",
+              "classes": [
+                "ot-link-btn",
+                "category-host-list-handler"
+              ],
+              "text": "Cookies Details‎",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "ot-group-id-3",
+              "classes": [
+                "category-switch-handler"
+              ],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "",
+              "classes": [
+                "ot-link-btn",
+                "category-host-list-handler"
+              ],
+              "text": "Cookies Details‎",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "ot-group-id-4",
+              "classes": [
+                "category-switch-handler"
+              ],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "",
+              "classes": [
+                "ot-link-btn",
+                "category-host-list-handler"
+              ],
+              "text": "Cookies Details‎",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "",
+              "classes": [
+                "ot-link-btn",
+                "back-btn-handler"
+              ],
+              "text": "Back ButtonCookie List",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "id": "vendor-search-handler",
+              "classes": [],
+              "text": "Search…",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "filter-btn-handler",
+              "classes": [],
+              "text": "Filter Button",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "select-all-hosts-groups-handler",
+              "classes": [],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "select-all-vendor-groups-handler",
+              "classes": [],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "select-all-vendor-leg-handler",
+              "classes": [],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "clear-filters-handler",
+              "classes": [],
+              "text": "Clear",
+              "visible": false
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "id": "chkbox-id",
+              "classes": [
+                "category-filter-handler"
+              ],
+              "text": "on",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "filter-apply-handler",
+              "classes": [],
+              "text": "Apply",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "filter-cancel-handler",
+              "classes": [],
+              "text": "Cancel",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "",
+              "classes": [
+                "save-preference-btn-handler",
+                "onetrust-close-btn-handler"
+              ],
+              "text": "Save Settings",
+              "visible": false
+            },
+            {
+              "tag": "button",
+              "type": "submit",
+              "id": "accept-recommended-btn-handler",
+              "classes": [],
+              "text": "Accept All Cookies",
+              "visible": false
+            }
+          ]
+        },
+        "forms": [],
+        "links": [
+          {
+            "href": "https://www.salesforce.com/in/?ir=1&bc=HB#main-content",
+            "text": "Skip to content",
+            "id": "",
+            "classes": [
+              "screen-reader-text",
+              "skip-to-content-c360"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/data/data-cloud-gartner-magic-quadrant/?d=pb",
+            "text": "Get the report",
+            "id": "",
+            "classes": [
+              "notification__link",
+              "pbc_link--bold"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/signup/freetrial-sales-starter/?d=jumbo1-btn-ft",
+            "text": "Start free trial",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/demo/starter-overview-demo/?d=jumbo2-btn-demo",
+            "text": "Watch demo",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+            "text": "",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+            "text": "Small Business",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+            "text": "Learn more",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+            "text": "",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+            "text": "Sales Cloud",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+            "text": "Learn more",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+            "text": "",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+            "text": "Service Cloud",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+            "text": "Learn more",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+            "text": "",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+            "text": "Marketing Cloud",
+            "id": "",
+            "classes": [],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+            "text": "Learn more",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_self",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/",
+            "text": "View all our products",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/signup/freetrial-sales/?d=mo1-btn-ft",
+            "text": "Start free trial",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/demo/overview-demo/?d=mo2-btn-demo",
+            "text": "Watch demos",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://trailhead.salesforce.com/",
+            "text": "Learn for free",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": true
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/?d=cb1-txt-stories",
+            "text": "View all customers",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/balaji-wafers/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/resources/customer-stories/flame-university/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/genpact/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/godrej/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/resources/customer-stories/mahindra-and-mahindra/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/resources/customer-stories/pepe-jeans/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/razorpay-india/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/customer-success-stories/secutech-automation/",
+            "text": "",
+            "id": "",
+            "classes": [
+              "card__logomark__link"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/form/signup/freetrial-sales/?d=trysf-btn-ft",
+            "text": "Start free trial",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/editions-pricing/sales-cloud/?d=trysf-btn-pricing",
+            "text": "See pricing",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/small-business/",
+            "text": "Sell faster",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/sales/",
+            "text": "Close more deals",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/service/",
+            "text": "Scale service",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/",
+            "text": "Build customer relationships",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/company/contact-us/?d=fb1-btn-contact",
+            "text": "Contact us",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://www.salesforce.com/in/editions-pricing/sales-cloud/?d=fb2-btn-pricing",
+            "text": "Editions & pricing",
+            "id": "",
+            "classes": [
+              "cta_button"
+            ],
+            "target": "",
+            "external": false
+          },
+          {
+            "href": "tel:18004207332",
+            "text": "",
+            "id": "",
+            "classes": [
+              "btn"
+            ],
+            "target": "",
+            "external": true
+          },
+          {
+            "href": "https://www.salesforce.com/company/privacy/full_privacy/",
+            "text": "Privacy Statement",
+            "id": "",
+            "classes": [
+              "privacy-notice-link"
+            ],
+            "target": "_blank",
+            "external": false
+          },
+          {
+            "href": "https://onetrust.com/poweredbyonetrust",
+            "text": "",
+            "id": "",
+            "classes": [],
+            "target": "_blank",
+            "external": true
+          }
+        ],
+        "images": [
+          {
+            "src": "https://ipv4.d.adroll.com/px4/KHJVGJC34FBOLOBY32R2LM/FENOVEGT5ZGR5PXEDL52BA?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&cookie=&adroll_s_ref=&keyw=&p0=1661&xa4=1",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://x.adroll.com/attribution/trigger?fpc=aa8103635c5cd5a88ac57e6197746019&advertisable_eid=KHJVGJC34FBOLOBY32R2LM&conversion_type=PageView&conversion_value=0.00&currency=USC&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/b/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/bombora/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/experian/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/g/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/index/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/l/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/n/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/o/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/outbrain/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/pubmatic/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/taboola/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/triplelift/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://d.adroll.com/cm/x/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+            "alt": "",
+            "id": "",
+            "classes": [],
+            "width": 1,
+            "height": 1,
+            "loading": "auto"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-lg-bg.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "background__image",
+              "background__image--custom"
+            ],
+            "width": 1920,
+            "height": 508,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-sm-bg.jpg?w=731",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "background__image",
+              "background__image--custom"
+            ],
+            "width": 100,
+            "height": 100,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?w=873",
+            "alt": "Small Business",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 290,
+            "height": 164,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-2.jpg?w=873",
+            "alt": "Sales Cloud",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 290,
+            "height": 164,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-3.jpg?w=873",
+            "alt": "Service Cloud",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 290,
+            "height": 164,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-4.jpg?w=873",
+            "alt": "Marketing Cloud",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 290,
+            "height": 164,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "background__image"
+            ],
+            "width": 1920,
+            "height": 586,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-balaji.png?w=450",
+            "alt": "Balaji logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-flame.png?w=450",
+            "alt": "Flame University logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-genpact.png?w=450",
+            "alt": "Genpact Logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-godrejboyce.png?w=450",
+            "alt": "Godrej logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-mahindra.png?w=450",
+            "alt": "Mahindra logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-pepe.png?w=450",
+            "alt": "Pepe Jeans Logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-razorpay.png?w=450",
+            "alt": "Razorpay logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-secutech.png?w=450",
+            "alt": "Secutech logo",
+            "id": "",
+            "classes": [
+              "card__logomark__image"
+            ],
+            "width": 136,
+            "height": 49,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-logos-bg-2.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "background__image"
+            ],
+            "width": 1920,
+            "height": 388,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/12/php-free-trial-mobile-inr2000-940w.png?w=940",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "image__asset"
+            ],
+            "width": 510,
+            "height": 434,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-small-business-in.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 79,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-sales-in.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 135,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-service-in.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 101,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/php-products-marketing.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 223,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201168.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 329,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201169.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 384,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201170.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "card__image"
+            ],
+            "width": 384,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg-2.png?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "background__image"
+            ],
+            "width": 1920,
+            "height": 0,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/pb-hp-footer-mid3-in.jpg?w=1024",
+            "alt": "",
+            "id": "",
+            "classes": [
+              "image__asset"
+            ],
+            "width": 1278,
+            "height": 793,
+            "loading": "lazy"
+          },
+          {
+            "src": "https://id.rlcdn.com/464526.gif",
+            "alt": "",
+            "id": "db_lr_pixel_ad",
+            "classes": [],
+            "width": 0,
+            "height": 0,
+            "loading": "auto"
+          },
+          {
+            "src": "https://a.sfdcstatic.com/digital/one-trust/core/stable/consent/8e783e8c-0ad0-475d-8fca-4a03afa0a02a/01938ba0-2bc1-7129-9a4c-e70d4380975d/logos/ddb906c9-f57b-40fc-85a1-c8bcbc371b0d/6a33a761-886e-4860-8e17-abc0832f7a62/corporate_logo_big.png",
+            "alt": "Salesforce",
+            "id": "",
+            "classes": [],
+            "width": 398,
+            "height": 279,
+            "loading": "auto"
+          },
+          {
+            "src": "",
+            "alt": "Powered by Onetrust",
+            "id": "",
+            "classes": [],
+            "width": 0,
+            "height": 0,
+            "loading": "auto"
+          }
+        ],
+        "scripts": [],
+        "styles": [],
+        "performance": {
+          "loadTime": 0.5,
+          "domContentLoaded": 0.7000000476837158,
+          "firstPaint": 1080,
+          "firstContentfulPaint": 1080,
+          "resourceCount": 250
+        },
+        "accessibility": {
+          "hasSkipLinks": true,
+          "hasHeadingStructure": true,
+          "hasAltTexts": false,
+          "hasAriaLabels": 39,
+          "hasFormLabels": 7,
+          "colorContrast": "requires-manual-testing",
+          "keyboardNavigation": "requires-manual-testing"
+        },
+        "seo": {
+          "title": "Salesforce: The Customer Company | Salesforce India",
+          "metaDescription": "Personalise every experience along the customer journey with the Customer 360. Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.",
+          "h1Count": 1,
+          "hasCanonical": true,
+          "hasRobots": true,
+          "hasViewport": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": false,
+          "internalLinks": 36,
+          "externalLinks": 14
+        }
+      },
+      "testCategories": {
+        "functional": {
+          "type": "functional",
+          "count": 17,
+          "tests": [
+            {
+              "id": "navigation_https___www_salesforce_com_in__ir_1_bc_HB_main_content",
+              "name": "Navigation Test - Skip to content",
+              "description": "Test navigation functionality and link behavior",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "a[href=\"https://www.salesforce.com/in/?ir=1&bc=HB#main-content\"]",
+                  "description": "Click on Skip to content"
+                },
+                {
+                  "action": "waitForNavigation",
+                  "params": {},
+                  "description": "Wait for page navigation"
+                },
+                {
+                  "action": "verifyURL",
+                  "params": {
+                    "expected": "https://www.salesforce.com/in/?ir=1&bc=HB#main-content"
+                  },
+                  "description": "Verify correct URL"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "navigation",
+                  "description": "Should navigate to correct URL"
+                },
+                {
+                  "type": "page",
+                  "description": "Page should load successfully"
+                }
+              ]
+            },
+            {
+              "id": "navigation_https___www_salesforce_com_in_form_data_data_cloud_gartner_magic_quadrant__d_pb",
+              "name": "Navigation Test - Get the report",
+              "description": "Test navigation functionality and link behavior",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "a[href=\"https://www.salesforce.com/in/form/data/data-cloud-gartner-magic-quadrant/?d=pb\"]",
+                  "description": "Click on Get the report"
+                },
+                {
+                  "action": "waitForNavigation",
+                  "params": {},
+                  "description": "Wait for page navigation"
+                },
+                {
+                  "action": "verifyURL",
+                  "params": {
+                    "expected": "https://www.salesforce.com/in/form/data/data-cloud-gartner-magic-quadrant/?d=pb"
+                  },
+                  "description": "Verify correct URL"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "navigation",
+                  "description": "Should navigate to correct URL"
+                },
+                {
+                  "type": "page",
+                  "description": "Page should load successfully"
+                }
+              ]
+            },
+            {
+              "id": "navigation_https___www_salesforce_com_in_form_signup_freetrial_sales_starter__d_jumbo1_btn_ft",
+              "name": "Navigation Test - Start free trial",
+              "description": "Test navigation functionality and link behavior",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "a[href=\"https://www.salesforce.com/in/form/signup/freetrial-sales-starter/?d=jumbo1-btn-ft\"]",
+                  "description": "Click on Start free trial"
+                },
+                {
+                  "action": "waitForNavigation",
+                  "params": {},
+                  "description": "Wait for page navigation"
+                },
+                {
+                  "action": "verifyURL",
+                  "params": {
+                    "expected": "https://www.salesforce.com/in/form/signup/freetrial-sales-starter/?d=jumbo1-btn-ft"
+                  },
+                  "description": "Verify correct URL"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "navigation",
+                  "description": "Should navigate to correct URL"
+                },
+                {
+                  "type": "page",
+                  "description": "Page should load successfully"
+                }
+              ]
+            },
+            {
+              "id": "navigation_https___www_salesforce_com_in_form_demo_starter_overview_demo__d_jumbo2_btn_demo",
+              "name": "Navigation Test - Watch demo",
+              "description": "Test navigation functionality and link behavior",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "a[href=\"https://www.salesforce.com/in/form/demo/starter-overview-demo/?d=jumbo2-btn-demo\"]",
+                  "description": "Click on Watch demo"
+                },
+                {
+                  "action": "waitForNavigation",
+                  "params": {},
+                  "description": "Wait for page navigation"
+                },
+                {
+                  "action": "verifyURL",
+                  "params": {
+                    "expected": "https://www.salesforce.com/in/form/demo/starter-overview-demo/?d=jumbo2-btn-demo"
+                  },
+                  "description": "Verify correct URL"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "navigation",
+                  "description": "Should navigate to correct URL"
+                },
+                {
+                  "type": "page",
+                  "description": "Page should load successfully"
+                }
+              ]
+            },
+            {
+              "id": "navigation_https___www_salesforce_com_in_products_salesforce_starter__d_pc1_btn_smblearn",
+              "name": "Navigation Test - https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+              "description": "Test navigation functionality and link behavior",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "a[href=\"https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn\"]",
+                  "description": "Click on link"
+                },
+                {
+                  "action": "waitForNavigation",
+                  "params": {},
+                  "description": "Wait for page navigation"
+                },
+                {
+                  "action": "verifyURL",
+                  "params": {
+                    "expected": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn"
+                  },
+                  "description": "Verify correct URL"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "navigation",
+                  "description": "Should navigate to correct URL"
+                },
+                {
+                  "type": "page",
+                  "description": "Page should load successfully"
+                }
+              ]
+            },
+            {
+              "id": "button_Cookies_Details_",
+              "name": "Button Test - Cookies Details‎",
+              "description": "Test button functionality and interaction",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "button:has-text(\"Cookies Details‎\")",
+                  "description": "Click Cookies Details‎"
+                },
+                {
+                  "action": "waitForResponse",
+                  "params": {},
+                  "description": "Wait for any response or action"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "interaction",
+                  "description": "Button should be clickable and responsive"
+                }
+              ]
+            },
+            {
+              "id": "button_Cookies_Details_",
+              "name": "Button Test - Cookies Details‎",
+              "description": "Test button functionality and interaction",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "button:has-text(\"Cookies Details‎\")",
+                  "description": "Click Cookies Details‎"
+                },
+                {
+                  "action": "waitForResponse",
+                  "params": {},
+                  "description": "Wait for any response or action"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "interaction",
+                  "description": "Button should be clickable and responsive"
+                }
+              ]
+            },
+            {
+              "id": "button_Cookies_Details_",
+              "name": "Button Test - Cookies Details‎",
+              "description": "Test button functionality and interaction",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "button:has-text(\"Cookies Details‎\")",
+                  "description": "Click Cookies Details‎"
+                },
+                {
+                  "action": "waitForResponse",
+                  "params": {},
+                  "description": "Wait for any response or action"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "interaction",
+                  "description": "Button should be clickable and responsive"
+                }
+              ]
+            },
+            {
+              "id": "button_Back_ButtonCookie_List",
+              "name": "Button Test - Back ButtonCookie List",
+              "description": "Test button functionality and interaction",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "button:has-text(\"Back ButtonCookie List\")",
+                  "description": "Click Back ButtonCookie List"
+                },
+                {
+                  "action": "waitForResponse",
+                  "params": {},
+                  "description": "Wait for any response or action"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "interaction",
+                  "description": "Button should be clickable and responsive"
+                }
+              ]
+            },
+            {
+              "id": "button_filter-btn-handler",
+              "name": "Button Test - Filter Button",
+              "description": "Test button functionality and interaction",
+              "type": "functional",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "click",
+                  "selector": "button:has-text(\"Filter Button\")",
+                  "description": "Click Filter Button"
+                },
+                {
+                  "action": "waitForResponse",
+                  "params": {},
+                  "description": "Wait for any response or action"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "interaction",
+                  "description": "Button should be clickable and responsive"
+                }
+              ]
+            }
+          ]
+        },
+        "ui": {
+          "type": "ui",
+          "count": 3,
+          "tests": [
+            {
+              "id": "ui_layout_responsive",
+              "name": "Responsive Layout Test",
+              "description": "Verify page layout adapts to different screen sizes",
+              "type": "ui",
+              "priority": "high",
+              "steps": [
+                {
+                  "action": "setViewportSize",
+                  "params": {
+                    "width": 1920,
+                    "height": 1080
+                  }
+                },
+                {
+                  "action": "screenshot",
+                  "params": {
+                    "name": "desktop_layout"
+                  }
+                },
+                {
+                  "action": "setViewportSize",
+                  "params": {
+                    "width": 768,
+                    "height": 1024
+                  }
+                },
+                {
+                  "action": "screenshot",
+                  "params": {
+                    "name": "tablet_layout"
+                  }
+                },
+                {
+                  "action": "setViewportSize",
+                  "params": {
+                    "width": 375,
+                    "height": 667
+                  }
+                },
+                {
+                  "action": "screenshot",
+                  "params": {
+                    "name": "mobile_layout"
+                  }
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "visual",
+                  "description": "Layout should adapt to different screen sizes"
+                }
+              ]
+            },
+            {
+              "id": "ui_visual_regression",
+              "name": "Visual Regression Test",
+              "description": "Detect unexpected visual changes",
+              "type": "ui",
+              "priority": "medium",
+              "steps": [
+                {
+                  "action": "screenshot",
+                  "params": {
+                    "name": "baseline",
+                    "fullPage": true
+                  }
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "visual",
+                  "description": "Page should match baseline screenshot"
+                }
+              ]
+            },
+            {
+              "id": "ui_color_contrast",
+              "name": "Color Contrast Test",
+              "description": "Verify adequate color contrast for accessibility",
+              "type": "ui",
+              "priority": "high",
+              "steps": [
+                {
+                  "action": "analyzeColorContrast",
+                  "params": {}
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "accessibility",
+                  "description": "Color contrast should meet WCAG guidelines"
+                }
+              ]
+            }
+          ]
+        },
+        "integration": {
+          "type": "integration",
+          "count": 1,
+          "tests": [
+            {
+              "id": "integration_api_endpoints",
+              "name": "API Endpoints Test",
+              "description": "Verify API endpoints are accessible and return expected data",
+              "type": "integration",
+              "priority": "high",
+              "steps": [
+                {
+                  "action": "interceptNetworkRequests",
+                  "params": {}
+                },
+                {
+                  "action": "triggerAPICall",
+                  "params": {
+                    "method": "GET"
+                  }
+                },
+                {
+                  "action": "validateAPIResponse",
+                  "params": {}
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "network",
+                  "description": "API should return 200 status code"
+                },
+                {
+                  "type": "data",
+                  "description": "Response should contain expected data structure"
+                }
+              ]
+            }
+          ]
+        },
+        "accessibility": {
+          "type": "accessibility",
+          "count": 2,
+          "tests": [
+            {
+              "id": "a11y_keyboard_navigation",
+              "name": "Keyboard Navigation Test",
+              "description": "Verify all interactive elements are keyboard accessible",
+              "type": "accessibility",
+              "priority": "high",
+              "steps": [
+                {
+                  "action": "tabThroughElements",
+                  "params": {}
+                },
+                {
+                  "action": "verifyFocusIndicators",
+                  "params": {}
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "accessibility",
+                  "description": "All interactive elements should be reachable via keyboard"
+                },
+                {
+                  "type": "accessibility",
+                  "description": "Focus indicators should be visible"
+                }
+              ]
+            },
+            {
+              "id": "a11y_screen_reader",
+              "name": "Screen Reader Compatibility Test",
+              "description": "Verify content is accessible to screen readers",
+              "type": "accessibility",
+              "priority": "high",
+              "steps": [
+                {
+                  "action": "checkAriaLabels",
+                  "params": {}
+                },
+                {
+                  "action": "checkHeadingStructure",
+                  "params": {}
+                },
+                {
+                  "action": "checkAltTexts",
+                  "params": {}
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "accessibility",
+                  "description": "All images should have alt text"
+                },
+                {
+                  "type": "accessibility",
+                  "description": "Heading structure should be logical"
+                },
+                {
+                  "type": "accessibility",
+                  "description": "Interactive elements should have ARIA labels"
+                }
+              ]
+            }
+          ]
+        },
+        "ai_generated": {
+          "type": "ai_generated",
+          "count": 1,
+          "tests": [
+            {
+              "id": "ai_basic_agentforce_chat_interface_validation_test",
+              "name": "Basic Agentforce chat interface validation Test",
+              "description": "Standard test scenario for Agentforce chat interface validation",
+              "type": "ai_generated",
+              "priority": "high",
+              "testType": "functional",
+              "steps": [
+                {
+                  "action": "navigate",
+                  "description": "Navigate to page"
+                },
+                {
+                  "action": "custom",
+                  "description": "Perform action"
+                },
+                {
+                  "action": "verify",
+                  "description": "Verify result"
+                }
+              ],
+              "assertions": [
+                {
+                  "type": "functional",
+                  "description": "Action completes successfully"
+                }
+              ],
+              "aiGenerated": true
+            }
+          ]
+        }
+      },
+      "summary": {
+        "totalTests": 24,
+        "testsByType": {
+          "functional": 17,
+          "ui": 3,
+          "integration": 1,
+          "accessibility": 2,
+          "ai_generated": 1
+        },
+        "testsByPriority": {
+          "high": 6,
+          "medium": 11,
+          "low": 0
+        },
+        "coverage": {
+          "forms": 0,
+          "links": 40,
+          "interactiveElements": 17
+        },
+        "recommendations": [
+          "Include performance tests to monitor page load times and resource usage"
+        ]
+      }
+    }
+  },
+  "performance_metrics": {
+    "loadTime": 0.20000004768371582,
+    "domContentLoaded": 0.5,
+    "firstPaint": 60,
+    "firstContentfulPaint": 60,
+    "timestamp": "2025-08-08T21:35:31.983Z",
+    "score": 100
+  },
+  "accessibility_report": {
+    "timestamp": "2025-08-08T21:35:31.650Z",
+    "checks": [
+      {
+        "name": "color_contrast",
+        "passed": true,
+        "issues": []
+      },
+      {
+        "name": "keyboard_navigation",
+        "passed": true,
+        "issues": []
+      }
+    ],
+    "score": 100
+  },
+  "security_analysis": {
+    "timestamp": "2025-08-08T21:35:31.763Z",
+    "checks": [
+      {
+        "name": "https_protocol",
+        "passed": true,
+        "details": {
+          "protocol": "https"
+        }
+      },
+      {
+        "name": "security_headers",
+        "passed": false,
+        "details": {
+          "missingHeaders": [
+            "content-security-policy",
+            "strict-transport-security"
+          ]
+        }
+      }
+    ],
+    "score": 50
+  },
+  "recommendations": [
+    {
+      "category": "functionality",
+      "priority": "high",
+      "message": "Agentforce presence not detected. Ensure Agentforce is properly implemented and visible."
+    },
+    {
+      "category": "usability",
+      "priority": "high",
+      "message": "Chat interface functionality is limited. Improve input handling and send button functionality."
+    },
+    {
+      "category": "security",
+      "priority": "high",
+      "message": "Security measures need enhancement. Implement proper security headers and HTTPS."
+    }
+  ],
+  "errors": [],
+  "page_analysis": {
+    "url": "https://www.salesforce.com/in/?ir=1&bc=HB",
+    "title": "Salesforce: The Customer Company | Salesforce India",
+    "timestamp": "2025-08-08T21:35:28.909Z",
+    "elements": {
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Try Salesforce Starter Suite for free.",
+          "id": "",
+          "classes": [
+            "headline",
+            "marquee__headline--standard"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Learn what Salesforce products can do for you.",
+          "id": "",
+          "classes": [
+            "headline"
+          ]
+        },
+        {
+          "level": "h3",
+          "text": "Small Business",
+          "id": "",
+          "classes": [
+            "card__headline",
+            "mb-16"
+          ]
+        },
+        {
+          "level": "h3",
+          "text": "Sales Cloud",
+          "id": "",
+          "classes": [
+            "card__headline",
+            "mb-16"
+          ]
+        },
+        {
+          "level": "h3",
+          "text": "Service Cloud",
+          "id": "",
+          "classes": [
+            "card__headline",
+            "mb-16"
+          ]
+        },
+        {
+          "level": "h3",
+          "text": "Marketing Cloud",
+          "id": "",
+          "classes": [
+            "card__headline",
+            "mb-16"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "We bring companies and customers together",
+          "id": "",
+          "classes": [
+            "headline",
+            "text__headline--large"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Learn valuable skills for free, with Trailhead.",
+          "id": "",
+          "classes": [
+            "headline"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Over 150,000 companies, both big and small, are growing their business with Salesforce.",
+          "id": "",
+          "classes": [
+            "headline",
+            "pbc-g-text-display-4"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Try Salesforce for free. No credit card required, no software to install.",
+          "id": "",
+          "classes": [
+            "pbc-g-text-display-4",
+            "mt-0",
+            "mb-24",
+            "mobile-mb-16"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "How can we help grow your business?",
+          "id": "",
+          "classes": [
+            "headline"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Our technology helps people create better jobs, lives, companies, and communities.",
+          "id": "",
+          "classes": [
+            "headline"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Questions? We’ll put you on the right path.",
+          "id": "",
+          "classes": [
+            "pbc-g-text-display-4",
+            "mt-0",
+            "mb-24",
+            "mobile-mb-16"
+          ]
+        },
+        {
+          "level": "h2",
+          "text": "Cookie Consent Manager",
+          "id": "ot-pc-title",
+          "classes": []
+        },
+        {
+          "level": "h3",
+          "text": "General Information",
+          "id": "ot-pvcy-txt",
+          "classes": []
+        },
+        {
+          "level": "h3",
+          "text": "Required Cookies",
+          "id": "ot-header-id-1",
+          "classes": []
+        },
+        {
+          "level": "h3",
+          "text": "Functional Cookies",
+          "id": "ot-header-id-3",
+          "classes": []
+        },
+        {
+          "level": "h3",
+          "text": "Advertising Cookies",
+          "id": "ot-header-id-4",
+          "classes": []
+        },
+        {
+          "level": "h4",
+          "text": "General Information",
+          "id": "ot-pvcy-hdr",
+          "classes": []
+        },
+        {
+          "level": "h4",
+          "text": "Required Cookies",
+          "id": "",
+          "classes": [
+            "ot-cat-header"
+          ]
+        },
+        {
+          "level": "h4",
+          "text": "Functional Cookies",
+          "id": "",
+          "classes": [
+            "ot-cat-header"
+          ]
+        },
+        {
+          "level": "h4",
+          "text": "Advertising Cookies",
+          "id": "",
+          "classes": [
+            "ot-cat-header"
+          ]
+        },
+        {
+          "level": "h3",
+          "text": "Cookie List",
+          "id": "",
+          "classes": []
+        }
+      ],
+      "sections": [
+        {
+          "tag": "main",
+          "id": "main-content",
+          "classes": [
+            "pbc-homepage-template"
+          ],
+          "childCount": 10
+        },
+        {
+          "tag": "section",
+          "id": "1727058029452_qla",
+          "classes": [
+            "relative",
+            "notification--blade",
+            "notification--blade--image-standard"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "1682325589592_4ma",
+          "classes": [
+            "relative",
+            "marquee--blade",
+            "marquee--right-image",
+            "theme--light",
+            "theme-light-blue-20"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "grid",
+            "grid_main",
+            "grid--sixteenbynine"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "section",
+          "id": "1675754273447_1hb",
+          "classes": [
+            "relative",
+            "nup--blade",
+            "nup--link_below",
+            "layout--4",
+            "nup--card_resource"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__1",
+            "card__wrapper"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__2",
+            "card__wrapper"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__3",
+            "card__wrapper"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__4",
+            "card__wrapper"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "1675753708418_125",
+          "classes": [
+            "relative",
+            "text--blade",
+            "theme--light_gradient",
+            "theme-light-blue-20"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "grid",
+            "grid_main",
+            "text__blade--link_below",
+            "text--center"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "section",
+          "id": "1693966637083_fub",
+          "classes": [
+            "relative",
+            "thmfe--blade",
+            "thmfe--link_below",
+            "layout--3",
+            "thmfe--"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__wrapper",
+            "theme--light"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "1675755059572_15io",
+          "classes": [
+            "relative",
+            "logogrid--blade",
+            "theme--light_gradient",
+            "theme-light-blue-20"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "grid",
+            "grid_main"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "section",
+          "id": "1675817562118_6zf",
+          "classes": [
+            "relative",
+            "promotion--blade",
+            "promotion--right-image",
+            "theme--light_gradient",
+            "theme-light-blue-20"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "grid",
+            "grid_main",
+            "theme--light",
+            "promotion_layout--full_height"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "section",
+          "id": "1675817758212_2ur",
+          "classes": [
+            "relative",
+            "story--blade",
+            "story--link_above",
+            "layout--4",
+            "story--card_story"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__1",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__2",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__3",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__4",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "1675818082885_kri",
+          "classes": [
+            "relative",
+            "story--blade",
+            "story--link_above",
+            "layout--3",
+            "story--card_story"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__1",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__2",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "card",
+            "card__3",
+            "card__wrapper",
+            "theme--light_gradient"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "1675818433240_m8n",
+          "classes": [
+            "relative",
+            "promotion--blade",
+            "promotion--center-image",
+            "theme--light_gradient",
+            "theme-light-blue-20"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "article",
+          "id": "",
+          "classes": [
+            "grid",
+            "grid_main",
+            "theme--light",
+            "promotion_layout--center"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "section",
+          "id": "ot-pc-lst",
+          "classes": [
+            "ot-hide",
+            "ot-pc-scrollbar",
+            "ot-enbl-chr"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "section",
+          "id": "ot-lst-cnt",
+          "classes": [
+            "ot-pc-scrollbar"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "section",
+          "id": "ot-fltr-modal",
+          "classes": [],
+          "childCount": 1
+        }
+      ],
+      "navigation": [],
+      "content": [],
+      "interactive": [
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "",
+          "classes": [
+            "ot-link-btn",
+            "category-host-list-handler"
+          ],
+          "text": "Cookies Details‎",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "ot-group-id-3",
+          "classes": [
+            "category-switch-handler"
+          ],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "",
+          "classes": [
+            "ot-link-btn",
+            "category-host-list-handler"
+          ],
+          "text": "Cookies Details‎",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "ot-group-id-4",
+          "classes": [
+            "category-switch-handler"
+          ],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "",
+          "classes": [
+            "ot-link-btn",
+            "category-host-list-handler"
+          ],
+          "text": "Cookies Details‎",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "",
+          "classes": [
+            "ot-link-btn",
+            "back-btn-handler"
+          ],
+          "text": "Back ButtonCookie List",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "vendor-search-handler",
+          "classes": [],
+          "text": "Search…",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "filter-btn-handler",
+          "classes": [],
+          "text": "Filter Button",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "select-all-hosts-groups-handler",
+          "classes": [],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "select-all-vendor-groups-handler",
+          "classes": [],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "select-all-vendor-leg-handler",
+          "classes": [],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "clear-filters-handler",
+          "classes": [],
+          "text": "Clear",
+          "visible": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "chkbox-id",
+          "classes": [
+            "category-filter-handler"
+          ],
+          "text": "on",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "filter-apply-handler",
+          "classes": [],
+          "text": "Apply",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "filter-cancel-handler",
+          "classes": [],
+          "text": "Cancel",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "",
+          "classes": [
+            "save-preference-btn-handler",
+            "onetrust-close-btn-handler"
+          ],
+          "text": "Save Settings",
+          "visible": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "id": "accept-recommended-btn-handler",
+          "classes": [],
+          "text": "Accept All Cookies",
+          "visible": false
+        }
+      ]
+    },
+    "forms": [],
+    "links": [
+      {
+        "href": "https://www.salesforce.com/in/?ir=1&bc=HB#main-content",
+        "text": "Skip to content",
+        "id": "",
+        "classes": [
+          "screen-reader-text",
+          "skip-to-content-c360"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/data/data-cloud-gartner-magic-quadrant/?d=pb",
+        "text": "Get the report",
+        "id": "",
+        "classes": [
+          "notification__link",
+          "pbc_link--bold"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/signup/freetrial-sales-starter/?d=jumbo1-btn-ft",
+        "text": "Start free trial",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/demo/starter-overview-demo/?d=jumbo2-btn-demo",
+        "text": "Watch demo",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+        "text": "",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+        "text": "Small Business",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/salesforce-starter/?d=pc1-btn-smblearn",
+        "text": "Learn more",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+        "text": "",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+        "text": "Sales Cloud",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/sales/?d=pc2-btn-saleslearn",
+        "text": "Learn more",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+        "text": "",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+        "text": "Service Cloud",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/service/?d=pc3-btn-servlearn",
+        "text": "Learn more",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+        "text": "",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+        "text": "Marketing Cloud",
+        "id": "",
+        "classes": [],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/?d=pc4-btn-mktglearn",
+        "text": "Learn more",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_self",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/",
+        "text": "View all our products",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/signup/freetrial-sales/?d=mo1-btn-ft",
+        "text": "Start free trial",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/demo/overview-demo/?d=mo2-btn-demo",
+        "text": "Watch demos",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://trailhead.salesforce.com/",
+        "text": "Learn for free",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": true
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/?d=cb1-txt-stories",
+        "text": "View all customers",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/balaji-wafers/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/resources/customer-stories/flame-university/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/genpact/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/godrej/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/resources/customer-stories/mahindra-and-mahindra/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/resources/customer-stories/pepe-jeans/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/razorpay-india/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/customer-success-stories/secutech-automation/",
+        "text": "",
+        "id": "",
+        "classes": [
+          "card__logomark__link"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/form/signup/freetrial-sales/?d=trysf-btn-ft",
+        "text": "Start free trial",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/editions-pricing/sales-cloud/?d=trysf-btn-pricing",
+        "text": "See pricing",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/small-business/",
+        "text": "Sell faster",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/sales/",
+        "text": "Close more deals",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/service/",
+        "text": "Scale service",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/products/marketing-cloud/overview/",
+        "text": "Build customer relationships",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/company/contact-us/?d=fb1-btn-contact",
+        "text": "Contact us",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://www.salesforce.com/in/editions-pricing/sales-cloud/?d=fb2-btn-pricing",
+        "text": "Editions & pricing",
+        "id": "",
+        "classes": [
+          "cta_button"
+        ],
+        "target": "",
+        "external": false
+      },
+      {
+        "href": "tel:18004207332",
+        "text": "",
+        "id": "",
+        "classes": [
+          "btn"
+        ],
+        "target": "",
+        "external": true
+      },
+      {
+        "href": "https://www.salesforce.com/company/privacy/full_privacy/",
+        "text": "Privacy Statement",
+        "id": "",
+        "classes": [
+          "privacy-notice-link"
+        ],
+        "target": "_blank",
+        "external": false
+      },
+      {
+        "href": "https://onetrust.com/poweredbyonetrust",
+        "text": "",
+        "id": "",
+        "classes": [],
+        "target": "_blank",
+        "external": true
+      }
+    ],
+    "images": [
+      {
+        "src": "https://ipv4.d.adroll.com/px4/KHJVGJC34FBOLOBY32R2LM/FENOVEGT5ZGR5PXEDL52BA?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&cookie=&adroll_s_ref=&keyw=&p0=1661&xa4=1",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://x.adroll.com/attribution/trigger?fpc=aa8103635c5cd5a88ac57e6197746019&advertisable_eid=KHJVGJC34FBOLOBY32R2LM&conversion_type=PageView&conversion_value=0.00&currency=USC&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/b/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/bombora/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/experian/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/g/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/index/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/l/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/n/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/o/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/outbrain/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/pubmatic/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/taboola/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/triplelift/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://d.adroll.com/cm/x/out?adroll_fpc=aa8103635c5cd5a88ac57e6197746019-1754688908335&flg=1&pv=6540900068.158029&arrfrr=https%3A%2F%2Fwww.salesforce.com%2Fin%2F%3Fir%3D1%26bc%3DHB&advertisable=KHJVGJC34FBOLOBY32R2LM",
+        "alt": "",
+        "id": "",
+        "classes": [],
+        "width": 1,
+        "height": 1,
+        "loading": "auto"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-lg-bg.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "background__image",
+          "background__image--custom"
+        ],
+        "width": 1920,
+        "height": 508,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-sm-bg.jpg?w=731",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "background__image",
+          "background__image--custom"
+        ],
+        "width": 100,
+        "height": 100,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?w=873",
+        "alt": "Small Business",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 290,
+        "height": 164,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-2.jpg?w=873",
+        "alt": "Sales Cloud",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 290,
+        "height": 164,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-3.jpg?w=873",
+        "alt": "Service Cloud",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 290,
+        "height": 164,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-4.jpg?w=873",
+        "alt": "Marketing Cloud",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 290,
+        "height": 164,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "background__image"
+        ],
+        "width": 1920,
+        "height": 586,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-balaji.png?w=450",
+        "alt": "Balaji logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-flame.png?w=450",
+        "alt": "Flame University logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-genpact.png?w=450",
+        "alt": "Genpact Logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-godrejboyce.png?w=450",
+        "alt": "Godrej logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-mahindra.png?w=450",
+        "alt": "Mahindra logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-pepe.png?w=450",
+        "alt": "Pepe Jeans Logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-razorpay.png?w=450",
+        "alt": "Razorpay logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-secutech.png?w=450",
+        "alt": "Secutech logo",
+        "id": "",
+        "classes": [
+          "card__logomark__image"
+        ],
+        "width": 136,
+        "height": 49,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-logos-bg-2.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "background__image"
+        ],
+        "width": 1920,
+        "height": 388,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/12/php-free-trial-mobile-inr2000-940w.png?w=940",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "image__asset"
+        ],
+        "width": 510,
+        "height": 434,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-small-business-in.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 79,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-sales-in.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 135,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-service-in.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 101,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/php-products-marketing.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 223,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201168.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 329,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201169.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 384,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201170.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "card__image"
+        ],
+        "width": 384,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg-2.png?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "background__image"
+        ],
+        "width": 1920,
+        "height": 0,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/pb-hp-footer-mid3-in.jpg?w=1024",
+        "alt": "",
+        "id": "",
+        "classes": [
+          "image__asset"
+        ],
+        "width": 1278,
+        "height": 793,
+        "loading": "lazy"
+      },
+      {
+        "src": "https://id.rlcdn.com/464526.gif",
+        "alt": "",
+        "id": "db_lr_pixel_ad",
+        "classes": [],
+        "width": 0,
+        "height": 0,
+        "loading": "auto"
+      },
+      {
+        "src": "https://a.sfdcstatic.com/digital/one-trust/core/stable/consent/8e783e8c-0ad0-475d-8fca-4a03afa0a02a/01938ba0-2bc1-7129-9a4c-e70d4380975d/logos/ddb906c9-f57b-40fc-85a1-c8bcbc371b0d/6a33a761-886e-4860-8e17-abc0832f7a62/corporate_logo_big.png",
+        "alt": "Salesforce",
+        "id": "",
+        "classes": [],
+        "width": 398,
+        "height": 279,
+        "loading": "auto"
+      },
+      {
+        "src": "",
+        "alt": "Powered by Onetrust",
+        "id": "",
+        "classes": [],
+        "width": 0,
+        "height": 0,
+        "loading": "auto"
+      }
+    ],
+    "scripts": [],
+    "styles": [],
+    "performance": {
+      "loadTime": 0.5,
+      "domContentLoaded": 0.7000000476837158,
+      "firstPaint": 1080,
+      "firstContentfulPaint": 1080,
+      "resourceCount": 250
+    },
+    "accessibility": {
+      "hasSkipLinks": true,
+      "hasHeadingStructure": true,
+      "hasAltTexts": false,
+      "hasAriaLabels": 39,
+      "hasFormLabels": 7,
+      "colorContrast": "requires-manual-testing",
+      "keyboardNavigation": "requires-manual-testing"
+    },
+    "seo": {
+      "title": "Salesforce: The Customer Company | Salesforce India",
+      "metaDescription": "Personalise every experience along the customer journey with the Customer 360. Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.",
+      "h1Count": 1,
+      "hasCanonical": true,
+      "hasRobots": true,
+      "hasViewport": true,
+      "hasOpenGraph": true,
+      "hasTwitterCard": false,
+      "internalLinks": 36,
+      "externalLinks": 14
+    }
+  },
+  "summary": {
+    "testsRun": 7,
+    "testsPassed": 1,
+    "averageTestScore": 14,
+    "performanceScore": 100,
+    "accessibilityScore": 100,
+    "securityScore": 50,
+    "overallScore": 56
+  }
+}

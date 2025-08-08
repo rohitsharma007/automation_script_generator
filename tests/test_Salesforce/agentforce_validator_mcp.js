@@ -13,6 +13,15 @@ const MongoDBUtils = require('./mongodb_utils');
 // Import Smart Element Detector from core framework
 const SmartElementDetector = require('../../core_framework/utils/smart_element_detector');
 
+// Import enhanced utilities from common/utils
+const ElementHelper = require('./common/utils/elementHelper');
+const WaitUtils = require('./common/utils/waitUtils');
+const Logger = require('./common/utils/logger');
+const AIHelper = require('./common/utils/aiHelper');
+const Crawler = require('./common/utils/crawler');
+const Orchestrator = require('./common/utils/orchestrator');
+const TestGenerator = require('./common/utils/testGenerator');
+
 class AgentforceMCPValidator {
   constructor(config = {}) {
     this.config = {
@@ -37,9 +46,25 @@ class AgentforceMCPValidator {
     this.stepLogs = [];
     this.mongoUtils = null;
     this.smartDetector = null;
+    
+    // Initialize enhanced utilities
+    this.logger = new Logger({
+      level: 'info',
+      logToFile: true,
+      logToConsole: true,
+      logDir: './logs'
+    });
+    
+    this.elementHelper = null; // Will be initialized per page
+    this.waitUtils = null; // Will be initialized per page
+    this.aiHelper = new AIHelper();
+    this.crawler = new Crawler();
+    this.orchestrator = new Orchestrator();
+    this.testGenerator = new TestGenerator();
   }
 
   async setup() {
+    this.logger.info('🎭 Setting up Enhanced Agentforce MCP Validator...');
     console.log('🎭 Setting up Enhanced Agentforce MCP Validator...');
     
     // Create test folders
@@ -47,15 +72,18 @@ class AgentforceMCPValidator {
     folders.forEach(folder => {
       if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder, { recursive: true });
+        this.logger.info(`📁 Created folder: ${folder}`);
       }
     });
 
-    // Initialize MongoDB if configured
+    // Initialize MongoDB if configured with enhanced logging
     try {
       this.mongoUtils = new MongoDBUtils();
       await this.mongoUtils.connect();
+      this.logger.info('✅ MongoDB connected successfully');
       console.log('✅ MongoDB connected successfully');
     } catch (error) {
+      this.logger.warn('⚠️ MongoDB connection failed, continuing without database storage:', error.message);
       console.log('⚠️ MongoDB connection failed, continuing without database storage:', error.message);
       this.mongoUtils = null;
     }
@@ -74,12 +102,20 @@ class AgentforceMCPValidator {
       
       const page = await context.newPage();
       
-      // Initialize Smart Element Detector for this page
-      this.smartDetector = new SmartElementDetector(page);
+      // Initialize Smart Element Detector for this page with enhanced logging
+      try {
+        this.smartDetector = new SmartElementDetector(page);
+        this.logger.info(`✅ Smart Element Detector initialized for ${browserType}`);
+      } catch (error) {
+        this.logger.error(`⚠️ Smart Element Detector initialization failed for ${browserType}: ${error.message}`);
+      }
       
       this.contexts.push({ browser, context, page, browserType });
       this.pages.push(page);
     }
+    
+    // Log utility initialization status
+    this.logger.info('🔧 Enhanced utilities initialized: Logger, AIHelper, Crawler, Orchestrator, TestGenerator');
   }
 
   async launchBrowser(browserType) {
@@ -170,15 +206,35 @@ class AgentforceMCPValidator {
     };
 
     try {
+      // Initialize page-specific utilities
+      this.elementHelper = new ElementHelper(page, {
+        retryConfig: { maxRetries: 3, retryDelay: 1000, timeoutMs: 30000 }
+      });
+      this.waitUtils = new WaitUtils(page, {
+        defaultTimeout: 30000,
+        shortTimeout: 5000,
+        longTimeout: 60000,
+        logLevel: 'info'
+      });
+      
+      this.logger.info(`🚀 Starting validation for ${browserType}`);
+      
       // Step 1: Navigate with intelligent loading detection
+      this.logger.info(`📍 Navigating to ${this.config.url}...`);
       console.log(`📍 Navigating to ${this.config.url}...`);
       await page.goto(this.config.url, { waitUntil: 'networkidle' });
+      
+      // Use enhanced wait utilities for better page load detection
+      await this.waitUtils.waitForPageLoad({ timeout: this.config.timeout });
       result.navigationSuccess = true;
+      this.logger.info('✅ Navigation successful');
       
       // Take screenshot
       await page.screenshot({ path: `screenshots/${browserType}-homepage.png` });
+      this.logger.info(`📸 Screenshot saved: ${browserType}-homepage.png`);
       
-      // Step 2: Intelligent chat interface detection
+      // Step 2: Enhanced chat interface detection
+      this.logger.info('🔍 Using enhanced smart detection for chat interface...');
       console.log('🔍 Using smart detection for chat interface...');
       const chatInterface = await this.detectChatInterface(page);
       
@@ -219,48 +275,85 @@ class AgentforceMCPValidator {
   }
 
   async detectChatInterface(page) {
+    this.logger.info('🎯 Using enhanced intelligent chat interface detection...');
     console.log('🎯 Using intelligent chat interface detection...');
     
-    // Define chat interface patterns for smart detection
-    const chatPatterns = {
-      chatInterface: {
-        selectors: [
-          '.chat-widget', '.chat-button', '.chat-launcher', '.help-widget',
-          '[data-chat]', '[data-widget="chat"]', '.support-chat',
-          '#chat-widget', '#chat-button', '.live-chat'
-        ],
-        attributes: ['chat', 'widget', 'support', 'help', 'assistant'],
-        text: ['chat', 'help', 'support', 'ask', 'assistant', 'talk'],
-        classes: ['chat', 'widget', 'support', 'help', 'assistant', 'bot']
-      }
-    };
-    
-    // Add chat patterns to smart detector
-    if (this.smartDetector) {
-      this.smartDetector.elementPatterns.chatInterface = chatPatterns.chatInterface;
-      
+    const chatSelectors = [
+      'button:has-text("Help")',
+      'button:has-text("Chat")',
+      'button:has-text("Ask")',
+      'button[aria-label*="chat"]',
+      'button[aria-label*="help"]',
+      'button[title*="chat"]',
+      'button[title*="help"]',
+      '.chat-button',
+      '#chat-button',
+      '.chat-widget',
+      '.chat-launcher',
+      '.help-widget',
+      '[data-chat]',
+      '[data-widget="chat"]',
+      '.support-chat',
+      '#chat-widget',
+      '.live-chat',
+      '.slds-chat',
+      '.salesforce-chat'
+    ];
+
+    // Try enhanced element detection first
+    if (this.elementHelper) {
       try {
-        const detection = await this.smartDetector.detectElement('chatInterface');
-        if (detection) {
-          return detection;
+        this.logger.info('🔍 Using ElementHelper for chat interface detection...');
+        const chatElement = await this.elementHelper.findElementWithFallback(chatSelectors, {
+          timeout: 10000,
+          retries: 3
+        });
+        
+        if (chatElement) {
+          await this.elementHelper.safeInteraction(chatElement, 'click');
+          this.logger.info('✅ Chat interface clicked using ElementHelper');
+          console.log('✅ Chat interface detected and clicked');
+          return chatElement;
         }
       } catch (error) {
+        this.logger.warn('⚠️ ElementHelper detection failed, trying fallback methods:', error.message);
         console.log('⚠️ Smart detection failed, trying fallback methods...');
       }
     }
-    
-    // Fallback: Manual detection with multiple strategies
-    const fallbackSelectors = [
-      '.chat-widget', '.chat-button', '.help-widget',
-      '[aria-label*="chat"]', '[aria-label*="help"]',
-      'button:has-text("Chat")', 'button:has-text("Help")',
-      '.slds-chat', '.salesforce-chat'
-    ];
-    
-    for (const selector of fallbackSelectors) {
+
+    // Fallback to Smart Element Detector
+    if (this.smartDetector) {
       try {
-        const element = await page.$(selector);
+        // Define chat interface patterns for smart detection
+        const chatPatterns = {
+          chatInterface: {
+            selectors: chatSelectors,
+            attributes: ['chat', 'widget', 'support', 'help', 'assistant'],
+            text: ['chat', 'help', 'support', 'ask', 'assistant', 'talk'],
+            classes: ['chat', 'widget', 'support', 'help', 'assistant', 'bot']
+          }
+        };
+        
+        this.smartDetector.elementPatterns.chatInterface = chatPatterns.chatInterface;
+        const detection = await this.smartDetector.detectElement('chatInterface');
+        if (detection && detection.element) {
+          await detection.element.click();
+          this.logger.info('✅ Chat interface clicked using SmartElementDetector');
+          console.log('✅ Chat interface detected and clicked');
+          return detection;
+        }
+      } catch (error) {
+        this.logger.warn('⚠️ SmartElementDetector failed:', error.message);
+      }
+    }
+    
+    // Final fallback: Manual detection
+    for (const selector of chatSelectors) {
+      try {
+        const element = await page.waitForSelector(selector, { timeout: 3000 });
         if (element && await element.isVisible()) {
+          await element.click();
+          this.logger.info(`✅ Fallback detection found chat interface: ${selector}`);
           console.log(`✅ Fallback detection found chat interface: ${selector}`);
           return { element, selector };
         }
@@ -269,6 +362,8 @@ class AgentforceMCPValidator {
       }
     }
     
+    this.logger.warn('❌ No chat interface found with any detection method');
+    console.log('❌ No chat interface found');
     return null;
   }
 

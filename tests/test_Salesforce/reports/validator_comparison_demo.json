@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-08-08T21:35:32.010Z",
+  "summary": {
+    "total_validators": 3,
+    "successful_runs": 0,
+    "total_duration": 194689,
+    "average_score": 0,
+    "best_performer": "enhanced",
+    "execution_efficiency": 0
+  },
+  "validators": {
+    "standard": {
+      "status": "error",
+      "duration": 31529,
+      "error": "Standard validator exited with code 1",
+      "overallScore": 0,
+      "performance_rating": "Poor"
+    },
+    "mcp_enhanced": {
+      "status": "error",
+      "duration": 136756,
+      "error": "MCP validator exited with code 1",
+      "overallScore": 0,
+      "performance_rating": "Poor"
+    },
+    "ai_enhanced": {
+      "status": "error",
+      "duration": 26404,
+      "error": "Enhanced validator exited with code 1",
+      "overallScore": 0,
+      "performance_rating": "Poor"
+    }
+  },
+  "analysis": {
+    "common_issues": [
+      "Standard validator errors",
+      "MCP validator errors",
+      "Enhanced validator errors"
+    ],
+    "improvement_areas": [
+      "Chat interface detection",
+      "MCP chat detection",
+      "Chat interaction reliability"
+    ],
+    "feature_comparison": {
+      "standard": {
+        "strengths": [
+          "Reliable",
+          "Fast execution",
+          "Basic validation"
+        ],
+        "limitations": [
+          "Limited detection",
+          "Basic reporting"
+        ]
+      },
+      "mcp_enhanced": {
+        "strengths": [
+          "Smart detection",
+          "Multi-context",
+          "Enhanced tracing"
+        ],
+        "limitations": [
+          "Complex setup",
+          "Resource intensive"
+        ]
+      },
+      "ai_enhanced": {
+        "strengths": [
+          "AI-powered",
+          "Comprehensive",
+          "Advanced utilities"
+        ],
+        "limitations": [
+          "Requires API key",
+          "Higher complexity"
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "Configure OpenAI API key in .env file to enable AI Enhanced validator",
+    "Use Standard for CI/CD, MCP for debugging, and Enhanced for comprehensive analysis"
+  ]
+}

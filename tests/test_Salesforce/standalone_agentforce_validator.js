@@ -20,13 +20,33 @@ const fs = require('fs');
 const path = require('path');
 const MongoDBUtils = require('./mongodb_utils');
 
-// Configuration
+// Import enhanced utilities for better performance
+const ElementHelper = require('./common/utils/elementHelper');
+const WaitUtils = require('./common/utils/waitUtils');
+const Logger = require('./common/utils/logger');
+
+// Enhanced Configuration with utility integration
 const CONFIG = {
   timeout: 60000, // 1 minute total
   pageLoadTimeout: 30000,
   chatWaitTimeout: 5000,
   responseWaitTimeout: 8000,
-  url: 'https://www.salesforce.com'
+  url: 'https://www.salesforce.com',
+  // Enhanced utility options
+  elementHelper: {
+    retryConfig: { maxRetries: 3, retryDelay: 1000, timeoutMs: 30000 }
+  },
+  waitUtils: {
+    defaultTimeout: 30000,
+    shortTimeout: 5000,
+    longTimeout: 60000,
+    logLevel: 'info'
+  },
+  logger: {
+    level: 'info',
+    logToFile: true,
+    logToConsole: true
+  }
 };
 
 // Chat selectors to try
@@ -102,15 +122,40 @@ async function validateAgentforceWelcome(page) {
 }
 
 /**
- * Find and click chat interface
+ * Enhanced find and click chat interface using ElementHelper
  */
-async function findAndClickChat(page) {
+async function findAndClickChat(page, elementHelper, logger) {
+  logger.info('🔍 Looking for chat interface with enhanced detection...');
   console.log('🔍 Looking for chat interface...');
   
+  try {
+    // Use ElementHelper for intelligent element detection
+    const chatResult = await elementHelper.findElement(CHAT_SELECTORS, {
+      timeout: 10000,
+      visible: true,
+      enabled: true
+    });
+    
+    if (chatResult && chatResult.element) {
+      logger.info(`✅ Found chat element using ${chatResult.strategy}`, { selector: chatResult.selector });
+      console.log(`✅ Found chat element: ${chatResult.selector}`);
+      
+      // Use ElementHelper's safe interaction
+      await elementHelper.safeInteraction(chatResult, 'click');
+      logger.info('✅ Successfully clicked chat interface');
+      return true;
+    }
+  } catch (error) {
+    logger.error('❌ Enhanced chat detection failed', { error: error.message });
+  }
+  
+  // Fallback to original method
+  logger.info('🔄 Falling back to basic detection...');
   for (const selector of CHAT_SELECTORS) {
     try {
       const element = page.locator(selector).first();
       if (await element.isVisible({ timeout: 2000 })) {
+        logger.info(`✅ Found chat element (fallback): ${selector}`);
         console.log(`✅ Found chat element: ${selector}`);
         await element.click();
         return true;
@@ -120,18 +165,41 @@ async function findAndClickChat(page) {
     }
   }
   
+  logger.warn('❌ No chat interface found');
   console.log('❌ No chat interface found');
   return false;
 }
 
 /**
- * Find chat input field
+ * Enhanced find chat input field using ElementHelper
  */
-async function findChatInput(page) {
+async function findChatInput(page, elementHelper, logger) {
+  logger.info('🔍 Looking for chat input field with enhanced detection...');
+  
+  try {
+    // Use ElementHelper for intelligent input detection
+    const inputResult = await elementHelper.findElement(INPUT_SELECTORS, {
+      timeout: 10000,
+      visible: true,
+      enabled: true
+    });
+    
+    if (inputResult && inputResult.element) {
+      logger.info(`✅ Found input field using ${inputResult.strategy}`, { selector: inputResult.selector });
+      console.log(`✅ Found input field: ${inputResult.selector}`);
+      return inputResult.element;
+    }
+  } catch (error) {
+    logger.error('❌ Enhanced input detection failed', { error: error.message });
+  }
+  
+  // Fallback to original method
+  logger.info('🔄 Falling back to basic input detection...');
   for (const selector of INPUT_SELECTORS) {
     try {
       const input = page.locator(selector).first();
       if (await input.isVisible({ timeout: 3000 })) {
+        logger.info(`✅ Found input field (fallback): ${selector}`);
         console.log(`✅ Found input field: ${selector}`);
         return input;
       }
@@ -139,6 +207,8 @@ async function findChatInput(page) {
       continue;
     }
   }
+  
+  logger.warn('❌ No chat input field found');
   return null;
 }
 
@@ -203,16 +273,29 @@ async function testChatInteraction(page, input, mongoUtils = null) {
  * Main validation function
  */
 async function runValidation() {
-  console.log('🚀 Starting Standalone Agentforce Validation...');
+  let browser;
+  let mongoUtils;
+  let logger;
+  let elementHelper;
+  let waitUtils;
+  
+  // Initialize enhanced utilities
+  logger = new Logger(CONFIG.logger);
+  logger.info('🚀 Starting Enhanced Agentforce Validation with Utilities');
+  console.log('🚀 Starting Enhanced Agentforce Validation');
   console.log('=' .repeat(50));
   
-  // Initialize MongoDB
-  const mongoUtils = new MongoDBUtils();
-  await mongoUtils.connect();
-  
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+  // Initialize MongoDB connection
+  try {
+    mongoUtils = new MongoDBUtils();
+    await mongoUtils.connect();
+    logger.info('✅ Connected to MongoDB');
+    console.log('✅ Connected to MongoDB');
+  } catch (mongoError) {
+    logger.warn('⚠️ MongoDB connection failed, continuing without database storage', { error: mongoError.message });
+    console.log('⚠️ MongoDB connection failed, continuing without database storage');
+    console.log('Error:', mongoError.message);
+  }
   
   const results = {
     timestamp: new Date().toISOString(),
@@ -225,31 +308,56 @@ async function runValidation() {
   };
   
   try {
-    // Navigate to Salesforce
+    // Launch browser
+    browser = await chromium.launch({ 
+      headless: false,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    
+    const context = await browser.newContext({
+      viewport: { width: 1280, height: 720 },
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    });
+    
+    const page = await context.newPage();
+    
+    // Initialize page-specific utilities
+    elementHelper = new ElementHelper(page);
+    waitUtils = new WaitUtils(page, CONFIG.waitUtils);
+    logger.info('✅ Enhanced utilities initialized', { elementHelper: true, waitUtils: true });
+    // Navigate to Salesforce with enhanced page load waiting
+    logger.info(`📍 Navigating to ${CONFIG.url}...`);
     console.log(`📍 Navigating to ${CONFIG.url}...`);
     await page.goto(CONFIG.url, { waitUntil: 'networkidle', timeout: CONFIG.pageLoadTimeout });
     
-    // Wait for page to load
-    await page.waitForTimeout(CONFIG.chatWaitTimeout);
+    // Use enhanced wait utilities for better page load detection
+    await waitUtils.waitForPageLoad({ timeout: CONFIG.pageLoadTimeout });
+    logger.info('✅ Page loaded successfully');
     
-    // Find and click chat
-    const chatFound = await findAndClickChat(page);
+    // Find and click chat with enhanced utilities
+    const chatFound = await findAndClickChat(page, elementHelper, logger);
     results.chatFound = chatFound;
     
     if (chatFound) {
-      // Wait for chat to open
-      await page.waitForTimeout(3000);
+      // Use smart waiting for chat interface to open
+      await waitUtils.waitForNetworkIdle({ timeout: 5000 });
+      logger.info('✅ Chat interface opened');
       
       // Validate Agentforce
+      logger.info('🤖 Performing Agentforce validation...');
       console.log('🤖 Performing Agentforce validation...');
       const validation = await validateAgentforceWelcome(page);
       results.agentforceValidation = validation;
       
+      logger.info(`🎯 Agentforce Validation Score: ${validation.validationScore}/100`);
       console.log(`🎯 Agentforce Validation Score: ${validation.validationScore}/100`);
-      validation.details.forEach(detail => console.log(`   ${detail}`));
+      validation.details.forEach(detail => {
+        logger.info(`   ${detail}`);
+        console.log(`   ${detail}`);
+      });
       
-      // Test chat interaction
-      const input = await findChatInput(page);
+      // Test chat interaction with enhanced input detection
+      const input = await findChatInput(page, elementHelper, logger);
       if (input) {
         const interactionWorking = await testChatInteraction(page, input, mongoUtils);
         results.chatInteractionWorking = interactionWorking;
@@ -258,37 +366,52 @@ async function runValidation() {
       // Determine overall status
       if (validation.validationScore >= 50 && results.chatInteractionWorking) {
         results.overallStatus = 'PASS';
+        logger.info('✅ Overall validation: PASS');
       } else if (validation.validationScore >= 50) {
         results.overallStatus = 'PARTIAL';
+        logger.info('⚠️ Overall validation: PARTIAL');
+      } else {
+        logger.warn('❌ Overall validation: FAIL');
       }
     }
     
   } catch (error) {
+    logger.error(`❌ Test error: ${error.message}`);
     console.log(`❌ Test error: ${error.message}`);
     results.error = error.message;
   } finally {
     await browser.close();
+    logger.info('🔒 Browser closed');
   }
   
-  // Store results in MongoDB
+  // Store results in MongoDB with enhanced logging
   try {
+    logger.info('💾 Storing results in MongoDB...');
     const mongoId = await mongoUtils.storeValidationResult(results);
     if (mongoId) {
       results.mongoDbStored = true;
       results.mongoId = mongoId.toString();
-      console.log('💾 Results stored in MongoDB');
+      logger.info(`✅ Results stored in MongoDB with ID: ${mongoId}`);
+      console.log(`✅ Results stored in MongoDB with ID: ${mongoId}`);
     }
   } catch (error) {
+    logger.error(`⚠️ MongoDB storage failed: ${error.message}`);
     console.log(`⚠️  MongoDB storage failed: ${error.message}`);
   } finally {
     await mongoUtils.disconnect();
+    logger.info('🔌 MongoDB disconnected');
   }
   
-  // Save results to file
-  const reportPath = 'agentforce_validation_report.json';
+  // Generate and save report with enhanced logging
+  const reportPath = path.join(__dirname, 'reports', 'agentforce_validation_report.json');
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
   fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
+  logger.info(`📄 Report saved to: ${reportPath}`);
   
-  // Print summary
+  // Log final summary
+   logger.info(`🏁 Validation completed with status: ${results.overallStatus}`);
+   
+   // Print summary
   console.log('\n' + '=' .repeat(50));
   console.log('📊 VALIDATION SUMMARY');
   console.log('=' .repeat(50));

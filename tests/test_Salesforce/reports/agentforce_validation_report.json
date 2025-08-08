@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-08T21:32:17.551Z",
+  "url": "https://www.salesforce.com",
+  "chatFound": false,
+  "agentforceValidation": null,
+  "chatInteractionWorking": false,
+  "overallStatus": "FAIL",
+  "mongoDbStored": true,
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.salesforce.com/\", waiting until \"networkidle\"\u001b[22m\n",
+  "mongoId": "68966d004e01f8acdd3a460a"
+}
