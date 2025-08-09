@@ -1,0 +1,73 @@
+[2025-08-08T21:35:04.526Z] [v53ycq] [WARN] MCP validator error: | ❌ Agentforce testing failed: Chat interface not found
+[2025-08-08T21:35:05.604Z] [v53ycq] [ERROR] ❌ MCP Validator failed: MCP validator exited with code 1
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at ValidatorDemo.runMCPValidator (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/demo.js:432:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ValidatorDemo.runDemo (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/demo.js:66:13)
+[2025-08-08T21:35:05.604Z] [v53ycq] [INFO] 🤖 Running AI Enhanced Validator...
+[2025-08-08T21:35:05.605Z] [v53ycq] [INFO] 🚀 Initializing Enhanced Validator with full AI suite...
+[2025-08-08T21:35:31.649Z] [v53ycq] [WARN] Enhanced validator error: | AI Test Scenario Generation Error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/node_modules/openai/error.js:63:20)
+    at OpenAI.makeStatusError (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/node_modules/openai/core.js:302:33)
+    at OpenAI.makeRequest (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/node_modules/openai/core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AIHelper.generateTestScenarios (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/aiHelper.js:38:30)
+    at async TestGenerator.generateAITests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/testGenerator.js:451:33)
+    at async TestGenerator.generateTestSuite (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/testGenerator.js:69:57)
+    at async EnhancedAgentforceValidator.runAIGeneratedTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:717:31)
+    at async EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:180:17)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29 {
+  status: 429,
+  headers: {
+    'alt-svc': 'h3=":443"; ma=86400',
+    'cf-cache-status': 'DYNAMIC',
+    'cf-ray': '96c224dc99287f0c-MAA',
+    connection: 'keep-alive',
+    'content-length': '337',
+    'content-type': 'application/json; charset=utf-8',
+    date: 'Fri, 08 Aug 2025 21:35:31 GMT',
+    server: 'cloudflare',
+    'set-cookie': '__cf_bm=imDdK_qomteVhiTJlBBKVx5SheWs4rjyfUnEmBI94to-1754688931-1.0.1.1-3dpb..pRfbTQZL2zmT5WOEkBF1.5Y34MBqgiO1qCVLFm3_HJy6meF0AbinYOcMkXHoGuTQhojFnBP6X.nxmlMT9nFwxevB0U73UkCaYpuac; path=/; expires=Fri, 08-Aug-25 22:05:31 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=nOIoxeXcn_RPCPPNYR4A7bnzRIw8L2nyaZeKANYGIjI-1754688931647-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-envoy-upstream-service-time': '60',
+    'x-request-id': 'req_20ff61113a3940878ada124840d319eb'
+  },
+  request_id: 'req_20ff61113a3940878ada124840d319eb',
+  error: {
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+    type: 'insufficient_quota',
+    param: null,
+    code: 'insufficient_quota'
+  },
+  code: 'insufficient_quota',
+  param: null,
+  type: 'insufficient_quota'
+}
+[2025-08-08T21:35:32.009Z] [v53ycq] [ERROR] ❌ Enhanced Validator failed: Enhanced validator exited with code 1
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at ValidatorDemo.runEnhancedValidator (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/demo.js:510:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ValidatorDemo.runDemo (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/demo.js:67:13)
+[2025-08-08T21:35:32.010Z] [v53ycq] [INFO] 📊 Generating comprehensive comparison report...
+[2025-08-08T21:35:32.010Z] [v53ycq] [INFO] 🤖 Generating AI-powered insights...
+[2025-08-08T21:35:32.010Z] [v53ycq] [INFO] 🤖 AI insights saved to: reports/ai_insights.json
+[2025-08-08T21:35:32.010Z] [v53ycq] [INFO] 📄 JSON report saved: /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/reports/validator_comparison_demo.json
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] 📄 Markdown report saved: /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/reports/validator_comparison_demo.md
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] 📊 Validation Summary:
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO]    • Total Validators: 3
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO]    • Successful Runs: 0
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO]    • Average Score: 0%
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO]    • Best Performer: enhanced
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO]    • Execution Efficiency: 0%
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] ⏱️ Total demo execution time: 195631ms
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] 🤖 Generating AI-powered insights...
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] 🤖 AI insights saved to: reports/ai_insights.json
+[2025-08-08T21:35:32.011Z] [v53ycq] [INFO] ✅ Demo completed successfully!

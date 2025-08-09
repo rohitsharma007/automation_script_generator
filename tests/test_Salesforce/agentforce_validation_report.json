@@ -1,17 +1,11 @@
 {
-  "timestamp": "2025-08-08T20:04:23.949Z",
+  "timestamp": "2025-08-08T21:10:17.090Z",
   "url": "https://www.salesforce.com",
-  "chatFound": true,
-  "agentforceValidation": {
-    "agentforceFound": true,
-    "chatResponsive": true,
-    "validationScore": 100,
-    "details": [
-      "✅ Found keyword: \"agentforce\"",
-      "✅ Page has substantial content - chat likely responsive"
-    ]
-  },
-  "chatInteractionWorking": true,
-  "overallStatus": "PASS",
-  "mongoDbStored": false
+  "chatFound": false,
+  "agentforceValidation": null,
+  "chatInteractionWorking": false,
+  "overallStatus": "FAIL",
+  "mongoDbStored": true,
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.salesforce.com/\", waiting until \"networkidle\"\u001b[22m\n",
+  "mongoId": "689667d76dee5d1ffeba48b3"
 }

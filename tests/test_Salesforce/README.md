@@ -1,286 +1,326 @@
-# Standalone Agentforce Validator with MongoDB Integration
+# Enhanced Agentforce Validator Suite
 
-A standalone script to validate Salesforce Agentforce chat functionality with MongoDB database integration for storing validation results and chat interactions.
+A comprehensive test automation suite for validating Salesforce Agentforce chat functionality with AI-powered intelligence, MongoDB integration, and advanced testing utilities.
 
-## Features
-
-### Core Validation Features
-- **Automated Agentforce Testing**: Validates Salesforce's AI assistant functionality
-- **Cross-browser Support**: Tests with Playwright (Chromium, Firefox, WebKit)
-- **Intelligent Chat Detection**: Automatically finds and interacts with chat interfaces
-- **Keyword Analysis**: Analyzes AI responses for relevant keywords
-- **Comprehensive Reporting**: Generates detailed JSON reports
-
-### Enhanced MCP Intelligence (New!)
-- **Smart Element Detection**: Uses AI-powered element detection from core framework
-- **Multi-Context Testing**: Runs validation across multiple browser contexts simultaneously
-- **Learning Capabilities**: Learns from successful element detections for improved accuracy
-- **Semantic Analysis**: Advanced element detection using semantic patterns
-- **Visual Pattern Recognition**: Detects elements based on visual characteristics
-- **Confidence Scoring**: Provides confidence scores for element detections
-- **Performance Metrics**: Collects detailed performance data (load times, paint metrics)
-- **Enhanced Tracing**: Records videos, HAR files, and traces for debugging
-
-### Database Integration
-- **MongoDB Integration**: Stores validation results and chat interactions for analytics
-- **Historical Analytics**: Track validation trends over time
-- **Team Collaboration**: Share results across team members
-- **Graceful Fallback**: Works with or without MongoDB connection
-
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
 ### Prerequisites
-- Node.js (version 16 or higher)
-- npm or yarn
-- MongoDB (local installation or MongoDB Atlas account)
 
-### Installation
+Before you begin, ensure you have the following installed on your system:
 
-1. **Clone or download this folder**
-2. **Install all dependencies and browsers:**
-   ```bash
-   npm run setup
-   ```
-   
-   Or manually:
-   ```bash
-   npm install
-   npm run install-browsers
-   ```
+- **Node.js** (version 16 or higher) - [Download here](https://nodejs.org/)
+- **Git** - [Download here](https://git-scm.com/)
+- **MongoDB** (optional but recommended) - [Download here](https://www.mongodb.com/try/download/community)
 
-3. **Configure MongoDB (Optional but Recommended):**
-   - Edit `.env` file to configure your MongoDB connection
-   - For local MongoDB: Keep default settings
-   - For MongoDB Atlas: Update `MONGODB_URI` with your connection string
-
-4. **Test MongoDB Connection:**
-   ```bash
-   npm run test-mongodb
-   ```
-
-### Usage
-
-#### Option 1: Run as standalone Node.js script
-```bash
-npm run validate
-# or
-node standalone_agentforce_validator.js
-```
-
-#### Option 2: Run with Playwright test runner (with browser UI)
-```bash
-npm test
-# or
-npx playwright test standalone_agentforce_validator.js --headed
-```
-
-#### Option 3: Run headless (no browser UI)
-```bash
-npm run test:headless
-# or
-npx playwright test standalone_agentforce_validator.js
-```
-
-## 🗄️ MongoDB Integration
-
-### Features
-- **Validation Results Storage** - All test results stored in MongoDB
-- **Chat Interaction Tracking** - Individual chat interactions logged
-- **Historical Analytics** - Track validation trends over time
-- **Team Collaboration** - Shared database for team insights
-
-### Configuration
-
-Edit `.env` file to configure MongoDB:
-
-```env
-# Local MongoDB (default)
-MONGODB_URI=mongodb://localhost:27017
-MONGODB_DATABASE=agentforce_validation
-MONGODB_COLLECTION=validation_results
-ENABLE_MONGODB=true
-
-# MongoDB Atlas (cloud)
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/
-# MONGODB_DATABASE=agentforce_validation
-# MONGODB_COLLECTION=validation_results
-# ENABLE_MONGODB=true
-```
-
-### Available Commands
+### Step 1: Clone the Repository
 
 ```bash
-# Test MongoDB connection
-npm run test-mongodb
+# Clone the repository
+git clone <your-repository-url>
 
-# Run standard Agentforce validation
-npm run validate
+# Navigate to the Salesforce test directory
+cd nlp/tests/test_Salesforce
+```
 
-# Run enhanced Agentforce validation with MCP intelligence
-npm run validate-mcp
+### Step 2: Install Dependencies
 
-# Setup (install dependencies and browsers)
+```bash
+# Install all Node.js dependencies
+npm install
+
+# Install Playwright browsers (required for testing)
+npm run install-browsers
+
+# Or run both commands at once
 npm run setup
 ```
 
-## Validator Comparison
+### Step 3: Configure Environment Variables
 
-| Feature | Standard Validator | MCP Enhanced Validator |
-|---------|-------------------|------------------------|
-| **Basic Validation** | ✅ | ✅ |
-| **MongoDB Integration** | ✅ | ✅ |
-| **Single Browser Testing** | ✅ | ✅ |
-| **Multi-Browser Testing** | ❌ | ✅ |
-| **Smart Element Detection** | ❌ | ✅ |
-| **Learning Capabilities** | ❌ | ✅ |
-| **Performance Metrics** | ❌ | ✅ |
-| **Video/Trace Recording** | ❌ | ✅ |
-| **Confidence Scoring** | ❌ | ✅ |
-| **Semantic Analysis** | ❌ | ✅ |
-| **Execution Speed** | Faster | Slower (more thorough) |
-| **Resource Usage** | Lower | Higher |
-| **Best For** | Quick validation, CI/CD | Comprehensive testing, debugging |
+```bash
+# Copy the example environment file
+cp .env.example .env
 
-### When to Use Each Validator
-
-**Use Standard Validator (`npm run validate`) when:**
-- Running quick validation checks
-- In CI/CD pipelines where speed is important
-- Limited system resources
-- Simple pass/fail validation needed
-
-**Use MCP Enhanced Validator (`npm run validate-mcp`) when:**
-- Comprehensive testing and analysis required
-- Debugging element detection issues
-- Cross-browser compatibility testing
-- Detailed performance analysis needed
-- Learning from validation patterns for improvement
-
-### Database Schema
-
-**Validation Results Collection:**
-```json
-{
-  "timestamp": "2024-01-01T12:00:00.000Z",
-  "url": "https://www.salesforce.com",
-  "chatFound": true,
-  "agentforceValidation": {
-    "agentforceFound": true,
-    "chatResponsive": true,
-    "validationScore": 100,
-    "details": ["✅ Found keyword: 'agentforce'"]
-  },
-  "chatInteractionWorking": true,
-  "overallStatus": "PASS",
-  "mongoDbStored": true,
-  "mongoId": "507f1f77bcf86cd799439011",
-  "sessionId": "session_1234567890_abc123",
-  "createdAt": "2024-01-01T12:00:00.000Z"
-}
+# Edit the .env file with your settings
+nano .env  # or use your preferred editor
 ```
 
-**Chat Interactions Collection:**
-```json
-{
-  "question": "What is Salesforce?",
-  "responseFound": true,
-  "detectedKeyword": "salesforce",
-  "responseTime": 2500,
-  "url": "https://www.salesforce.com",
-  "timestamp": "2024-01-01T12:00:00.000Z",
-  "sessionId": "session_1234567890_abc123"
-}
+**Required Configuration:**
+```env
+# AI Configuration (for Enhanced Validator)
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-3.5-turbo
+OPENAI_MAX_TOKENS=2000
+
+# MongoDB Configuration (Optional)
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_DATABASE=agentforce_validation
+MONGODB_COLLECTION=test_results
 ```
 
-## 📊 What It Validates
+**Get your OpenAI API Key:**
+1. Visit [OpenAI Platform](https://platform.openai.com/account/api-keys)
+2. Create an account or sign in
+3. Generate a new API key
+4. Copy and paste it into your `.env` file
 
-✅ **Chat Interface Detection** - Finds and clicks Salesforce chat button  
-✅ **Agentforce Presence** - Detects Agentforce keywords on the page  
-✅ **Chat Responsiveness** - Tests if the chat agent responds to questions  
-✅ **Response Quality** - Validates response contains relevant keywords  
+### Step 4: Test Your Setup
 
-## 📈 Scoring System
+```bash
+# Test MongoDB connection (optional)
+npm run test-mongodb
 
-- **100/100**: Perfect - Agentforce detected + Chat fully responsive
-- **50/100**: Partial - Agentforce detected but chat issues
-- **0/100**: Failed - No Agentforce detected
+# Run a quick validation test
+npm run validate
+```
 
-## 📄 Output
+### Step 5: Run Your First Validation
 
-The script generates:
-- **Console output** with real-time validation progress
-- **JSON report** (`agentforce_validation_report.json`) with detailed results
-- **Playwright HTML report** (when using test runner)
+```bash
+# Run the comprehensive demo (recommended for first-time users)
+npm run demo
 
-## 🔧 Configuration
+# Or run individual validators:
+npm run validate          # Standard validator
+npm run validate-mcp      # MCP enhanced validator
+npm run validate-enhanced # AI enhanced validator
+```
 
-You can modify the configuration in `standalone_agentforce_validator.js`:
+## 🎯 Available Validators
+
+### 1. Standard Validator (Recommended for CI/CD)
+```bash
+npm run validate
+```
+**Features:**
+- Basic Agentforce validation
+- MongoDB integration
+- Fast execution (~30-40 seconds)
+- Perfect for automated testing
+
+### 2. MCP Enhanced Validator
+```bash
+npm run validate-mcp
+```
+**Features:**
+- Multi-context testing
+- Learning algorithms
+- Performance metrics
+- Enhanced tracing and debugging
+
+### 3. AI Enhanced Validator
+```bash
+npm run validate-enhanced
+```
+**Features:**
+- AI-powered test generation
+- Intelligent element detection
+- Comprehensive analysis
+- Accessibility and security scanning
+- **Requires OpenAI API key**
+
+### 4. Demo Mode (Compare All Validators)
+```bash
+npm run demo
+```
+**Features:**
+- Runs all three validators
+- Generates comparison reports
+- Provides recommendations
+- Perfect for evaluation
+
+## 📁 Project Structure
+
+```
+test_Salesforce/
+├── README.md                           # This file
+├── package.json                        # Dependencies and scripts
+├── .env.example                        # Environment template
+├── .env                               # Your configuration (create this)
+├── demo.js                            # Demo script
+├── standalone_agentforce_validator.js  # Standard validator
+├── agentforce_validator_mcp.js        # MCP enhanced validator
+├── enhanced_agentforce_validator.js   # AI enhanced validator
+├── common/utils/                      # Utility modules
+├── reports/                           # Generated reports
+├── logs/                             # Log files
+├── screenshots/                       # Test screenshots
+└── traces/                           # Playwright traces
+```
+
+## 🔧 Configuration Options
+
+### Environment Variables (.env file)
+
+```env
+# AI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-3.5-turbo
+OPENAI_MAX_TOKENS=2000
+
+# MongoDB Configuration (Optional)
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_DATABASE=agentforce_validation
+MONGODB_COLLECTION=test_results
+
+# Validation Settings
+VALIDATION_TIMEOUT=30000
+MAX_RETRIES=3
+HEADLESS_MODE=false
+
+# Reporting Configuration
+REPORT_DIRECTORY=./reports
+GENERATE_SCREENSHOTS=true
+GENERATE_VIDEO=false
+
+# Security Settings
+ENABLE_SECURITY_SCAN=true
+ENABLE_ACCESSIBILITY_SCAN=true
+ENABLE_PERFORMANCE_SCAN=true
+
+# Debug Settings
+DEBUG_MODE=false
+VERBOSE_LOGGING=false
+```
+
+## 🛠️ Troubleshooting
+
+### Common Issues and Solutions
+
+**1. "Command not found: npm"**
+```bash
+# Install Node.js from https://nodejs.org/
+# Verify installation:
+node --version
+npm --version
+```
+
+**2. "Playwright browsers not installed"**
+```bash
+npm run install-browsers
+# Or manually:
+npx playwright install
+```
+
+**3. "MongoDB connection failed"**
+```bash
+# Install MongoDB locally or use MongoDB Atlas
+# Update MONGODB_URI in .env file
+# MongoDB is optional - validators work without it
+```
+
+**4. "OpenAI API key invalid"**
+```bash
+# Get a valid API key from https://platform.openai.com/
+# Ensure you have credits in your OpenAI account
+# Update OPENAI_API_KEY in .env file
+```
+
+**5. "Permission denied"**
+```bash
+# On macOS/Linux, you might need:
+sudo npm install -g playwright
+# Or use npx instead of global installation
+```
+
+### Getting Help
+
+1. **Check the logs**: Look in the `logs/` directory for detailed error information
+2. **Run with debug mode**: Set `DEBUG_MODE=true` in your `.env` file
+3. **Test individual components**: Use `npm run test-mongodb` to test specific parts
+4. **Check reports**: Review generated reports in the `reports/` directory
+
+## 📊 Understanding Results
+
+### Validation Scores
+- **100/100**: Perfect - Agentforce fully functional
+- **75-99**: Good - Minor issues detected
+- **50-74**: Fair - Some functionality missing
+- **25-49**: Poor - Significant issues
+- **0-24**: Failed - Major problems detected
+
+### Report Files
+- `agentforce_validation_report.json`: Detailed validation results
+- `validation_summary.md`: Human-readable summary
+- `validator_comparison_demo.json`: Comparison of all validators
+- `enhanced_agentforce_validation_report.json`: AI-enhanced analysis
+
+## 🚀 Advanced Usage
+
+### Custom Target URLs
+
+Edit the validator files to test different URLs:
 
 ```javascript
-const CONFIG = {
-  timeout: 60000, // Total test timeout
-  pageLoadTimeout: 30000, // Page load timeout
-  chatWaitTimeout: 5000, // Wait for chat to appear
-  responseWaitTimeout: 8000, // Wait for chat response
-  url: 'https://www.salesforce.com' // Target URL
-};
+// In any validator file, change:
+const targetUrl = 'https://your-salesforce-instance.com';
 ```
 
-## 🎯 Example Output
+### CI/CD Integration
 
-```
-🚀 Starting Standalone Agentforce Validation...
-==================================================
-📍 Navigating to https://www.salesforce.com...
-🔍 Looking for chat interface...
-✅ Found chat element: button:has-text("Help")
-🤖 Performing Agentforce validation...
-🎯 Agentforce Validation Score: 100/100
-   ✅ Found keyword: "agentforce"
-   ✅ Page has substantial content - chat likely responsive
-💬 Testing chat interaction...
-✅ Response detected with keyword: "salesforce"
+```bash
+# Add to your CI/CD pipeline:
+npm run setup
+npm run validate
 
-==================================================
-📊 VALIDATION SUMMARY
-==================================================
-🌐 URL: https://www.salesforce.com
-💬 Chat Found: ✅ Yes
-🤖 Agentforce Score: 100/100
-🔍 Agentforce Detected: ✅ Yes
-💬 Chat Interaction: ✅ Working
-📊 Overall Status: PASS
-📄 Report saved: agentforce_validation_report.json
-==================================================
+# Check exit code for pass/fail
+echo $?  # 0 = success, 1 = failure
 ```
 
-## 🛠 Troubleshooting
+### Scheduled Testing
 
-**Chat not found?**
-- The script tries multiple selectors automatically
-- Check if Salesforce has updated their chat interface
+```bash
+# Add to crontab for daily testing:
+0 9 * * * cd /path/to/test_Salesforce && npm run validate
+```
 
-**Validation fails?**
-- Ensure stable internet connection
-- Try running with `--headed` to see what's happening
-- Check the generated JSON report for detailed error info
+## 📋 Available Commands
 
-**Browser issues?**
-- Run `npm run install-browsers` to reinstall Playwright browsers
-- Ensure you have sufficient disk space
+| Command | Description | Use Case |
+|---------|-------------|----------|
+| `npm run setup` | Install dependencies and browsers | Initial setup |
+| `npm run validate` | Run standard validator | CI/CD, regular monitoring |
+| `npm run validate-mcp` | Run MCP enhanced validator | Debugging, detailed analysis |
+| `npm run validate-enhanced` | Run AI enhanced validator | Comprehensive testing |
+| `npm run demo` | Run all validators with comparison | Evaluation, reporting |
+| `npm run test-mongodb` | Test MongoDB connection | Setup verification |
+| `npm run install-browsers` | Install Playwright browsers | Browser setup |
 
-## 📁 Files Included
+## 🌟 Features Overview
 
-- `standalone_agentforce_validator.js` - Main validation script
-- `package.json` - Dependencies and scripts
-- `README.md` - This documentation
+### Standard Validator
+- ✅ Basic Agentforce detection
+- ✅ Chat interface validation
+- ✅ MongoDB integration
+- ✅ Fast execution
+- ✅ CI/CD friendly
 
-## 🤝 Team Usage
+### MCP Enhanced Validator
+- ✅ Multi-context testing
+- ✅ Learning algorithms
+- ✅ Performance metrics
+- ✅ Enhanced debugging
+- ✅ Video recording
 
-This script is designed to be:
-- **Self-contained** - No external dependencies beyond Playwright
-- **Cross-platform** - Works on Windows, Mac, and Linux
-- **CI/CD ready** - Can be integrated into automated pipelines
-- **Configurable** - Easy to modify for different environments
+### AI Enhanced Validator
+- ✅ AI-powered analysis
+- ✅ Intelligent test generation
+- ✅ Accessibility testing
+- ✅ Security scanning
+- ✅ Advanced reporting
 
-Share this entire folder with your team - they just need to run `npm install` and they're ready to go!
+## 📝 License
+
+MIT License - feel free to use and modify as needed.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+---
+
+**Need help?** Check the troubleshooting section above or review the generated reports for detailed information about any issues.

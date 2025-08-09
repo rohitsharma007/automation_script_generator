@@ -1,0 +1,109 @@
+[2025-08-08T21:35:05.892Z] [q2vcoz] [INFO] SESSION_START | {
+  "sessionId": "q2vcoz",
+  "timestamp": "2025-08-08T21:35:05.892Z",
+  "pid": 44025,
+  "nodeVersion": "v24.5.0",
+  "platform": "darwin"
+}
+[2025-08-08T21:35:05.893Z] [q2vcoz] [INFO] Initializing Enhanced Agentforce Validator
+[2025-08-08T21:35:06.129Z] [q2vcoz] [INFO] Enhanced Agentforce Validator initialized successfully
+[2025-08-08T21:35:06.129Z] [q2vcoz] [INFO] Starting comprehensive Agentforce validation | {
+  "url": "https://www.salesforce.com"
+}
+[2025-08-08T21:35:06.129Z] [q2vcoz] [INFO] Navigating to page | {
+  "url": "https://www.salesforce.com"
+}
+[2025-08-08T21:35:28.908Z] [q2vcoz] [INFO] Page navigation completed | {
+  "url": "https://www.salesforce.com/in/?ir=1&bc=HB",
+  "title": "Salesforce: The Customer Company | Salesforce India"
+}
+[2025-08-08T21:35:28.909Z] [q2vcoz] [INFO] Performing comprehensive page analysis
+[2025-08-08T21:35:28.918Z] [q2vcoz] [INFO] Page analysis completed | {
+  "forms": 0,
+  "links": 40
+}
+[2025-08-08T21:35:28.918Z] [q2vcoz] [INFO] Running core Agentforce tests
+[2025-08-08T21:35:28.918Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "agentforce_presence",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.918Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "chat_interface",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.918Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "agent_responsiveness",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.918Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "conversation_flow",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.918Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "error_handling",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.919Z] [q2vcoz] [ERROR] Test failed | {
+  "testName": "accessibility_compliance",
+  "error": "this.logger.test is not a function"
+}
+Stack: Error
+    at Logger.formatLogEntry (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:281:27)
+    at Logger.log (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:87:31)
+    at Logger.error (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/common/utils/logger.js:118:14)
+    at EnhancedAgentforceValidator.runCoreAgentforceTests (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:296:29)
+    at EnhancedAgentforceValidator.validateAgentforce (/Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:176:24)
+    at async /Users/rohitsharma/Downloads/nlp/tests/test_Salesforce/enhanced_agentforce_validator.js:1208:29
+[2025-08-08T21:35:28.919Z] [q2vcoz] [INFO] Running AI-generated tests
+[2025-08-08T21:35:31.649Z] [q2vcoz] [INFO] Executing AI-generated test | {
+  "testName": "Basic Agentforce chat interface validation Test"
+}
+[2025-08-08T21:35:31.650Z] [q2vcoz] [INFO] Performing accessibility analysis
+[2025-08-08T21:35:31.763Z] [q2vcoz] [INFO] Performing security analysis
+[2025-08-08T21:35:31.975Z] [q2vcoz] [INFO] Performing performance analysis
+[2025-08-08T21:35:31.985Z] [q2vcoz] [INFO] Generating comprehensive report
+[2025-08-08T21:35:31.986Z] [q2vcoz] [INFO] Report saved | {
+  "path": "reports/enhanced_agentforce_validation_report.json"
+}
+[2025-08-08T21:35:31.987Z] [q2vcoz] [INFO] Markdown summary generated | {
+  "path": "reports/validation_summary.md"
+}
+[2025-08-08T21:35:31.987Z] [q2vcoz] [INFO] Agentforce validation completed | {
+  "score": 56,
+  "testsRun": 7
+}

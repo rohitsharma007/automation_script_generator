@@ -8,7 +8,9 @@
     "test:headless": "npx playwright test standalone_agentforce_validator.js",
     "validate": "node standalone_agentforce_validator.js",
     "validate-mcp": "node agentforce_validator_mcp.js",
+    "validate-enhanced": "node enhanced_agentforce_validator.js",
     "test-mongodb": "node test_mongodb.js",
+    "demo": "node demo.js",
     "install-browsers": "npx playwright install",
     "setup": "npm install && npx playwright install"
   },
@@ -24,9 +26,10 @@
   "license": "MIT",
   "dependencies": {
     "@playwright/test": "^1.40.0",
-    "playwright": "^1.40.0",
+    "dotenv": "^16.3.1",
     "mongodb": "^6.3.0",
-    "dotenv": "^16.3.1"
+    "openai": "^4.104.0",
+    "playwright": "^1.40.0"
   },
   "engines": {
     "node": ">=16.0.0"
